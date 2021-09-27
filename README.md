@@ -77,7 +77,7 @@ OpenTelemetry colletor would be the component that will help us converting our t
 
 Before deploying our OpenTelemetry collector, we need to generate the api token in dynatrace.
 Follow the instruction described in [dynatrace's documentation](https://www.dynatrace.com/support/help/shortlink/api-authentication#generate-a-token)
-Make sure that the scope Ingest OpenTelemetry traces is enabled.
+Make sure that the scope Ingest OpenTelemetry traces and metrics v2 is enabled.
 <p align="center"><img src="/image/dt_api.png" width="60%" alt="dt api scope" /></p>
 
 We need to update the opentelemetry collector deployment file by referring to our dynatrace tenant
