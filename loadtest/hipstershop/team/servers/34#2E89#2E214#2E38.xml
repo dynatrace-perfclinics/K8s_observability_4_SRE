@@ -1,0 +1,4 @@
+<http-server hostname="35.234.127.4" port="80" ssl="false"
+    uid="34.89.214.38" urlrewriting-argument-name=""
+    urlrewriting-enabled="false" urlrewriting-path-extension="false"
+    urlrewriting-path-not-equals="false" urlrewriting-path-separator=";"/>

@@ -1,0 +1,10 @@
+GET http://ec2-54-229-141-49.eu-west-1.compute.amazonaws.com/js/respond.min.js HTTP/1.1
+Host: ec2-54-229-141-49.eu-west-1.compute.amazonaws.com
+User-Agent: Mozilla/5.0 (X11; Ubuntu; Linux x86_64; rv:67.0) Gecko/20100101 Firefox/67.0
+Accept: */*
+Accept-Language: fr,fr-FR;q=0.8,en-US;q=0.5,en;q=0.3
+Accept-Encoding: gzip, deflate
+Referer: http://ec2-54-229-141-49.eu-west-1.compute.amazonaws.com/category.html
+Connection: keep-alive
+Cookie: _TRAEFIK_BACKEND=http://front-end:8079; rxVisitor=1559753258800B7753AIJRSRVQTPSH7BT2F0HVP9G3M99; dtPC=1$353258793_362h-vIMBPMMBFDNOMEDDOXPIDDAMOIJCPEUAO; rxvt=1559755083086|1559753258804; dtSa=true%7CC%7C-1%7CCatalogue%7C-%7C1559753283001%7C353258793_362%7Chttp%3A%2F%2Fec2-54-229-141-49.eu-west-1.compute.amazonaws.com%2F%7CWeaveSocks%7C1559753281158%7C; dtLatC=3; md.sid=s%3Ap4Q-8ptuUAN2axSBM_GXcy6PAuvHWfiM.3E4e92Tact%2By6aHCBAPwKl3u2vNLxkSdD%2BZxujzWULQ; dtCookie=1$A946CA27656D726CF8E015468B3B1E7C|ea7c4b59f27d43eb|1
+

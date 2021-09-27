@@ -1,0 +1,197 @@
+
+    
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Hipster Shop</title>
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-WskhaSGFgHYWDcbwN70/dfYBj47jz9qbsMId/iRN3ewGhXQFZCSftd1LZCfmhktB" crossorigin="anonymous">
+</head>
+<body>
+
+    <header>
+        <div class="navbar navbar-dark bg-dark box-shadow">
+            <div class="container d-flex justify-content-between">
+                <a href="/" class="navbar-brand d-flex align-items-center">
+                    Hipster Shop
+                </a>
+                
+                <form class="form-inline ml-auto" method="POST" action="/setCurrency" id="currency_form">
+                    <select name="currency_code" class="form-control"
+                    onchange="document.getElementById('currency_form').submit();" style="width:auto;">
+                    
+                        <option value="EUR" >EUR</option>
+                    
+                        <option value="USD" selected="selected">USD</option>
+                    
+                        <option value="JPY" >JPY</option>
+                    
+                        <option value="GBP" >GBP</option>
+                    
+                        <option value="TRY" >TRY</option>
+                    
+                        <option value="CAD" >CAD</option>
+                    
+                    </select>
+                    <a class="btn btn-primary btn-light ml-2" href="/cart" role="button">View Cart (1)</a>
+                </form>
+                
+            </div>
+        </div>
+    </header>
+
+
+
+
+    <main role="main">
+        <div class="py-5">
+            <div class="container bg-light py-3 px-lg-5 py-lg-5">
+                <div class="row">
+                    <div class="col-12 col-lg-5">
+                            <img class="img-fluid border" style="width: 100%;"
+                            src="/static/img/products/camp-mug.jpg" />
+                    </div>
+                    <div class="col-12 col-lg-7">
+                            <h2>Metal Camping Mug</h2>
+                            
+                            <p class="text-muted">
+                                USD 24.33
+                            </p>
+                            <hr/>
+                            <p>
+                                <h6>Product Description:</h6>
+                                You probably don&#39;t go camping that often but this is better than plastic cups.
+                            </p>
+                            <hr/>
+
+                            <form method="POST" action="/cart" class="form-inline text-muted">
+                                <input type="hidden" name="product_id" value="LS4PSXUNUM"/>
+                                <div class="input-group">
+                                    <div class="input-group-prepend">
+                                        <label class="input-group-text" for="quantity">Quantity</label>
+                                    </div>
+                                    <select name="quantity" id="quantity" class="custom-select form-control form-control-lg">
+                                        <option>1</option>
+                                        <option>2</option>
+                                        <option>3</option>
+                                        <option>4</option>
+                                        <option>5</option>
+                                        <option>10</option>
+                                    </select>
+                                    <button type="submit" class="btn btn-info btn-lg ml-3">Add to Cart</button>
+                                </div>
+                            </form>
+                    </div>
+                </div>
+                
+                
+                    <hr/>
+                    
+<h5 class="text-muted">Products you might like</h5>
+<div class="row my-2 py-3">
+    
+        <div class="col-sm-6 col-md-4 col-lg-3">
+            <div class="card mb-3 box-shadow">
+                <a href="/product/2ZYFJ3GM2N">
+                    <img class="card-img-top border-bottom" alt =""
+                        style="width: 100%; height: auto;"
+                        src="/static/img/products/film-camera.jpg">
+                </a>
+                <div class="card-body text-center py-2">
+                    <small class="card-title text-muted">
+                        Film Camera
+                    </small>
+                </div>
+            </div>
+        </div>
+    
+        <div class="col-sm-6 col-md-4 col-lg-3">
+            <div class="card mb-3 box-shadow">
+                <a href="/product/1YMWWN1N4O">
+                    <img class="card-img-top border-bottom" alt =""
+                        style="width: 100%; height: auto;"
+                        src="/static/img/products/barista-kit.jpg">
+                </a>
+                <div class="card-body text-center py-2">
+                    <small class="card-title text-muted">
+                        Home Barista Kit
+                    </small>
+                </div>
+            </div>
+        </div>
+    
+        <div class="col-sm-6 col-md-4 col-lg-3">
+            <div class="card mb-3 box-shadow">
+                <a href="/product/L9ECAV7KIM">
+                    <img class="card-img-top border-bottom" alt =""
+                        style="width: 100%; height: auto;"
+                        src="/static/img/products/terrarium.jpg">
+                </a>
+                <div class="card-body text-center py-2">
+                    <small class="card-title text-muted">
+                        Terrarium
+                    </small>
+                </div>
+            </div>
+        </div>
+    
+        <div class="col-sm-6 col-md-4 col-lg-3">
+            <div class="card mb-3 box-shadow">
+                <a href="/product/6E92ZMYYFZ">
+                    <img class="card-img-top border-bottom" alt =""
+                        style="width: 100%; height: auto;"
+                        src="/static/img/products/air-plant.jpg">
+                </a>
+                <div class="card-body text-center py-2">
+                    <small class="card-title text-muted">
+                        Air Plant
+                    </small>
+                </div>
+            </div>
+        </div>
+    
+</div>
+
+                
+                
+                
+<div class="container">
+    <div class="alert alert-dark" role="alert">
+        <strong>Advertisement:</strong>
+        <a href="/product/1YMWWN1N4O" rel="nofollow" target="_blank" class="alert-link">
+            Home Barista kitchen kit for sale. Buy one, get second kit for free
+        </a>
+    </div>
+</div>
+
+            </div>
+        </div>
+    
+    </main>
+    
+    <footer class="py-5 px-5">
+        <div class="container">
+            <p>
+                &copy; 2018 Google Inc
+                <span class="text-muted">
+                    <a href="https://github.com/GoogleCloudPlatform/microservices-demo/">(Source Code)</a>
+                </span>
+            </p>
+            <p>
+                <small class="text-muted">
+                    This website is hosted for demo purposes only. It is not an
+                    actual shop. This is not an official Google project.
+                </small>
+            </p>
+            <small class="text-muted">
+                session-id: f0cd1187-fcd3-42cb-9ff4-527525a1984c</br>
+                request-id: 59ffbb26-7677-41f6-bc62-54a6cc2cedb4</br>
+            </small>
+        </div>
+    </footer>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js" integrity="sha384-smHYKdLADwkXOn1EmN1qk/HfnUcbVRZyYmZ4qpPea6sjB/pTJ0euyQp0Mk8ck+5T" crossorigin="anonymous"></script>
+</body>
+</html>
+

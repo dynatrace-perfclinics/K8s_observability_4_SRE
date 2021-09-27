@@ -1,0 +1,12 @@
+GET http://ec2-54-229-141-49.eu-west-1.compute.amazonaws.com/catalogue?size=5 HTTP/1.1
+Host: ec2-54-229-141-49.eu-west-1.compute.amazonaws.com
+User-Agent: Mozilla/5.0 (X11; Ubuntu; Linux x86_64; rv:67.0) Gecko/20100101 Firefox/67.0
+Accept: application/json, text/javascript, */*; q=0.01
+Accept-Language: fr,fr-FR;q=0.8,en-US;q=0.5,en;q=0.3
+Accept-Encoding: gzip, deflate
+Referer: http://ec2-54-229-141-49.eu-west-1.compute.amazonaws.com/
+X-Requested-With: XMLHttpRequest
+x-dtpc: 1$353258793_362h5vIMBPMMBFDNOMEDDOXPIDDAMOIJCPEUAOe-1
+Connection: keep-alive
+Cookie: _TRAEFIK_BACKEND=http://front-end:8079; dtCookie=1$A946CA27656D726CF8E015468B3B1E7C; rxVisitor=1559753258800B7753AIJRSRVQTPSH7BT2F0HVP9G3M99; dtPC=1$353258793_362h5vIMBPMMBFDNOMEDDOXPIDDAMOIJCPEUAO; rxvt=1559755059278|1559753258804; dtSa=-; dtLatC=3
+

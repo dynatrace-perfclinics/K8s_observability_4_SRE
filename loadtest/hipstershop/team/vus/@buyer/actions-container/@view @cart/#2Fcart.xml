@@ -1,0 +1,50 @@
+<http-page executeResourcesDynamically="false" name="/cart"
+    playRequestsSequentially="false"
+    recordedArtifactZipFileName="team/vus/@buyer/%resources%/recorded-artifacts/e442f326-9b06-488a-b99b-540726d4de6d.zip"
+    slaProfileEnabled="false" thinkTime="0"
+    thinkTimeMode="MODE_SIMPLE_THINK_TIME" thinkTimeRangeEnd=""
+    thinkTimeRangeStart="" uid="e442f326-9b06-488a-b99b-540726d4de6d">
+    <embedded-action>635114b8-efcd-4c1a-b88b-ade0ba92e0b8</embedded-action>
+    <screenshotFileDescription>recorded-screenshots/sc_5161ffef-5bb1-497c-a347-15bdcf54607f.jpg</screenshotFileDescription>
+</http-page>
+<http-action actionType="1" contentType="text/html; charset=utf-8"
+    extractorInjectPathPolicy="2" extractorPathPolicy="1"
+    followRedirects="false" generatedByClient="false"
+    linkExtractorSeveralMatchOccurrence="1"
+    linkExtractorSeveralMatchPolicy="1" linkExtractorType="6"
+    method="GET" name="/cart" path="/cart" postCharset="" postType="2"
+    recordedArtifactZipFileName="team/vus/@buyer/%resources%/recorded-artifacts/e442f326-9b06-488a-b99b-540726d4de6d.zip"
+    recordedResponseCode="200" responseSize="14366"
+    serverUid="34.89.214.38" slaProfileEnabled="false"
+    uid="635114b8-efcd-4c1a-b88b-ade0ba92e0b8" useKeepAlive="false">
+    <responsePageFileDescription>recorded-responses/res_b249c07c-f59d-444f-9db5-99af432d6a08.0.html</responsePageFileDescription>
+    <requestContentFileDescription>recorded-requests/req_b249c07c-f59d-444f-9db5-99af432d6a08.txt</requestContentFileDescription>
+    <variable-extractor assertionOnNoMatch="false"
+        defaultValue="&lt;NOT FOUND>" displayMode="0"
+        endsWithSimple="&lt;/button>" extractFromVarNameAdv=""
+        extractFromVarNameSimple="" extractType="0" extractTypeAdv="0"
+        extractTypeSimple="0" matchNumber="1" matchNumberAdv="1"
+        matchNumberSimple="1" name="placeyouorder"
+        refererUid="635114b8-efcd-4c1a-b88b-ade0ba92e0b8"
+        regExp=" &lt;button class=&quot;btn btn-primary&quot; type=&quot;submit&quot;>(.*?)&lt;/button>"
+        regExpAdv="" setDefaultValue="true"
+        startsWithSimple=" &lt;button class=&quot;btn btn-primary&quot; type=&quot;submit&quot;>"
+        template="$1$" templateAdv="$1$"
+        uid="a93e8375-5564-4236-946b-1b37cebb9955" xpath="">
+        <variable-extractor-group extract="true" occurs="1" pattern="" type="4"/>
+    </variable-extractor>
+    <header name="Accept" value="text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.9"/>
+    <header name="Accept-Encoding" value="gzip, deflate"/>
+    <header name="Accept-Language" value="en-US,en;q=0.9"/>
+    <header name="Cookie" value="shop_session-id=f0cd1187-fcd3-42cb-9ff4-527525a1984c"/>
+    <header name="Host" value="34.89.214.38"/>
+    <header name="Proxy-Connection" value="keep-alive"/>
+    <header name="Referer" value="http://34.89.214.38/product/LS4PSXUNUM"/>
+    <header name="Upgrade-Insecure-Requests" value="1"/>
+    <header name="User-Agent" value="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/91.0.4472.114 Safari/537.36 Edg/91.0.864.59"/>
+    <responseHeaders>HTTP/1.1 200 OK&#xd;
+Date: Mon, 28 Jun 2021 07:21:36 GMT&#xd;
+Content-Type: text/html; charset=utf-8&#xd;
+Transfer-Encoding: chunked</responseHeaders>
+    <record-html-infos extractorRegExp="false" htmlType="0"/>
+</http-action>

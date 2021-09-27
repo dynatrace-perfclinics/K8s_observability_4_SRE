@@ -1,0 +1,32 @@
+apiVersion: networking.istio.io/v1alpha3
+kind: Gateway
+metadata:
+  name: http-gateway
+  namespace: sockshop-production
+spec:
+  selector:
+    istio: ingressgateway # use istio default controller
+  servers:
+    - port:
+        number: 8080
+        name: web
+        protocol: HTTP
+      hosts:
+        - "*"
+---
+apiVersion: networking.istio.io/v1alpha3
+kind: VirtualService
+metadata:
+  name: front-end
+  namespace: sockshop-production
+spec:
+  hosts:
+    - "*"
+  gateways:
+    - http-gateway
+  http:
+    - route:
+        - destination:
+            host: front-end
+            port:
+              number: 8080

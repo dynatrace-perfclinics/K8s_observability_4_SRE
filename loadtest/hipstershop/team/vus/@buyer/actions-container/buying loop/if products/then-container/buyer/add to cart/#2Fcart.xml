@@ -1,0 +1,73 @@
+<http-page executeResourcesDynamically="false" name="/cart"
+    playRequestsSequentially="false"
+    recordedArtifactZipFileName="team/vus/@buyer/%resources%/recorded-artifacts/0f94ce8f-3fc6-4203-9735-0a1b5612318a.zip"
+    slaProfileEnabled="false" thinkTime="1305"
+    thinkTimeMode="MODE_SIMPLE_THINK_TIME" thinkTimeRangeEnd=""
+    thinkTimeRangeStart="" uid="0f94ce8f-3fc6-4203-9735-0a1b5612318a">
+    <embedded-action>7471aa5d-46ad-46e7-a010-40f8309cabe7</embedded-action>
+    <embedded-action>da924a6f-9d1e-4b15-9034-a0ca15bff822</embedded-action>
+    <screenshotFileDescription>recorded-screenshots/sc_ac90ed05-0857-4851-a449-b17aefc38c1b.jpg</screenshotFileDescription>
+</http-page>
+<http-action actionType="1" extractorInjectPathPolicy="2"
+    extractorPathPolicy="1" followRedirects="false"
+    generatedByClient="false" linkExtractorSeveralMatchOccurrence="1"
+    linkExtractorSeveralMatchPolicy="1" linkExtractorType="6"
+    method="POST" name="/cart" path="/cart" postCharset="iso-8859-1"
+    postType="1"
+    recordedArtifactZipFileName="team/vus/@buyer/%resources%/recorded-artifacts/0f94ce8f-3fc6-4203-9735-0a1b5612318a.zip"
+    recordedResponseCode="302" responseSize="0" serverUid="34.89.214.38"
+    slaProfileEnabled="false" uid="7471aa5d-46ad-46e7-a010-40f8309cabe7" useKeepAlive="false">
+    <binaryPostContentBase64><![CDATA[cHJvZHVjdF9pZD05U0lRVDhUT0pPJnF1YW50aXR5PTE=]]></binaryPostContentBase64>
+    <responsePageFileDescription>recorded-responses/res_7471aa5d-46ad-46e7-a010-40f8309cabe7</responsePageFileDescription>
+    <requestContentFileDescription>recorded-requests/req_4e2932b6-1dd2-4e7b-945e-809a9bf4fec3.txt</requestContentFileDescription>
+    <parameter encodeName="true" encodeValue="true" name="product_id"
+        recordRawValue="9SIQT8TOJO" separator="=" value="${Products}" valueMode="USE_VALUE"/>
+    <parameter encodeName="true" encodeValue="true" name="quantity"
+        recordRawValue="1" separator="=" value="1" valueMode="USE_VALUE"/>
+    <header name="Accept" value="text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.9"/>
+    <header name="Accept-Encoding" value="gzip, deflate"/>
+    <header name="Accept-Language" value="en-US,en;q=0.9"/>
+    <header name="Cache-Control" value="max-age=0"/>
+    <header name="Content-Type" value="application/x-www-form-urlencoded"/>
+    <header name="Cookie" value="shop_session-id=f0cd1187-fcd3-42cb-9ff4-527525a1984c"/>
+    <header name="Host" value="34.89.214.38"/>
+    <header name="Origin" value="http://34.89.214.38"/>
+    <header name="Proxy-Connection" value="keep-alive"/>
+    <header name="Referer" value="http://34.89.214.38/product/9SIQT8TOJO"/>
+    <header name="Upgrade-Insecure-Requests" value="1"/>
+    <header name="User-Agent" value="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/91.0.4472.114 Safari/537.36 Edg/91.0.864.59"/>
+    <responseHeaders>HTTP/1.1 302 Found&#xd;
+Location: /cart&#xd;
+Date: Mon, 28 Jun 2021 07:20:32 GMT&#xd;
+Content-Length: 0</responseHeaders>
+    <record-html-infos extractorRegExp="false" htmlType="0"/>
+</http-action>
+<http-action actionType="2" contentType="text/html; charset=utf-8"
+    extractorInjectPathPolicy="2" extractorPathPolicy="1"
+    followRedirects="false" generatedByClient="false"
+    linkExtractorSeveralMatchOccurrence="1"
+    linkExtractorSeveralMatchPolicy="1" linkExtractorType="6"
+    method="GET" name="/cart" path="/cart" postType="2"
+    recordedArtifactZipFileName="team/vus/@buyer/%resources%/recorded-artifacts/0f94ce8f-3fc6-4203-9735-0a1b5612318a.zip"
+    recordedResponseCode="200"
+    refererUid="7471aa5d-46ad-46e7-a010-40f8309cabe7"
+    responseSize="14354" serverUid="34.89.214.38"
+    slaProfileEnabled="false" uid="da924a6f-9d1e-4b15-9034-a0ca15bff822" useKeepAlive="false">
+    <responsePageFileDescription>recorded-responses/res_79b4025b-9bf2-4f74-8be1-542ff3395635.html</responsePageFileDescription>
+    <requestContentFileDescription>recorded-requests/req_79b4025b-9bf2-4f74-8be1-542ff3395635.txt</requestContentFileDescription>
+    <header name="Accept" value="text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.9"/>
+    <header name="Accept-Encoding" value="gzip, deflate"/>
+    <header name="Accept-Language" value="en-US,en;q=0.9"/>
+    <header name="Cache-Control" value="max-age=0"/>
+    <header name="Cookie" value="shop_session-id=f0cd1187-fcd3-42cb-9ff4-527525a1984c"/>
+    <header name="Host" value="34.89.214.38"/>
+    <header name="Proxy-Connection" value="keep-alive"/>
+    <header name="Referer" value="http://34.89.214.38/product/9SIQT8TOJO"/>
+    <header name="Upgrade-Insecure-Requests" value="1"/>
+    <header name="User-Agent" value="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/91.0.4472.114 Safari/537.36 Edg/91.0.864.59"/>
+    <responseHeaders>HTTP/1.1 200 OK&#xd;
+Date: Mon, 28 Jun 2021 07:20:32 GMT&#xd;
+Content-Type: text/html; charset=utf-8&#xd;
+Transfer-Encoding: chunked</responseHeaders>
+    <record-html-infos extractorRegExp="false" htmlType="0"/>
+</http-action>

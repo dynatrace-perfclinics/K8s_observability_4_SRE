@@ -1,0 +1,4 @@
+<loop-action loop="${AverageCartNumber}" name="buying loop" uid="8187c539-2dd7-4855-888a-4e7dcbbb917e">
+    <embedded-action>f2489196-0511-49fb-8e04-f35248d89231</embedded-action>
+    <embedded-action>0087628b-aa04-4be0-a6e5-6b880b81e52a</embedded-action>
+</loop-action>

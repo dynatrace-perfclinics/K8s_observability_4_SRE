@@ -1,0 +1,70 @@
+<http-page executeResourcesDynamically="false" name="/cart/checkout"
+    playRequestsSequentially="false"
+    recordedArtifactZipFileName="team/vus/@buyer/%resources%/recorded-artifacts/662689ec-e14d-4c1b-b80c-cf07d490bbc3.zip"
+    slaProfileEnabled="false" thinkTime="210"
+    thinkTimeMode="MODE_SIMPLE_THINK_TIME" thinkTimeRangeEnd=""
+    thinkTimeRangeStart="" uid="662689ec-e14d-4c1b-b80c-cf07d490bbc3">
+    <embedded-action>1a7c8984-35c7-4951-b005-c5188a73b472</embedded-action>
+    <screenshotFileDescription>recorded-screenshots/sc_71a9ea7e-91d7-40dc-9781-696b8586cd40.jpg</screenshotFileDescription>
+</http-page>
+<http-action actionType="1" contentType="text/html; charset=utf-8"
+    extractorInjectPathPolicy="2" extractorPathPolicy="1"
+    followRedirects="false" generatedByClient="false"
+    linkExtractorSeveralMatchOccurrence="1"
+    linkExtractorSeveralMatchPolicy="1" linkExtractorType="6"
+    method="POST" name="/cart/checkout" path="/cart/checkout"
+    postCharset="iso-8859-1" postType="1"
+    recordedArtifactZipFileName="team/vus/@buyer/%resources%/recorded-artifacts/662689ec-e14d-4c1b-b80c-cf07d490bbc3.zip"
+    recordedResponseCode="200"
+    refererUid="635114b8-efcd-4c1a-b88b-ade0ba92e0b8"
+    responseSize="5458" serverUid="34.89.214.38"
+    slaProfileEnabled="false" uid="1a7c8984-35c7-4951-b005-c5188a73b472" useKeepAlive="false">
+    <binaryPostContentBase64><![CDATA[ZW1haWw9c29tZW9uZSU0MGV4YW1wbGUuY29tJnN0cmVldF9hZGRyZXNzPTE2MDArQW1waGl0aGVhdHJlK1Bhcmt3YXkmemlwX2NvZGU9OTQwNDMmY2l0eT1Nb3VudGFpbitWaWV3JnN0YXRlPUNBJmNvdW50cnk9VW5pdGVkK1N0YXRlcyZjcmVkaXRfY2FyZF9udW1iZXI9NDQzMi04MDE1LTYxNTItMDQ1NCZjcmVkaXRfY2FyZF9leHBpcmF0aW9uX21vbnRoPTEmY3JlZGl0X2NhcmRfZXhwaXJhdGlvbl95ZWFyPTIwMjImY3JlZGl0X2NhcmRfY3Z2PTY3Mg==]]></binaryPostContentBase64>
+    <responsePageFileDescription>recorded-responses/res_e03829fb-2252-4833-bb78-afccb5cc0d7a.html</responsePageFileDescription>
+    <requestContentFileDescription>recorded-requests/req_e03829fb-2252-4833-bb78-afccb5cc0d7a.txt</requestContentFileDescription>
+    <parameter encodeName="true" encodeValue="true" name="email"
+        recordRawValue="someone%40example.com" separator="="
+        value="${Name.Name}@example.com" valueMode="USE_VALUE"/>
+    <parameter encodeName="true" encodeValue="true"
+        name="street_address" recordRawValue="1600+Amphitheatre+Parkway"
+        separator="=" value="${streetnumber} ${street.Name}" valueMode="USE_VALUE"/>
+    <parameter encodeName="true" encodeValue="true" name="zip_code"
+        recordRawValue="94043" separator="=" value="${zipcode.Name}" valueMode="USE_VALUE"/>
+    <parameter encodeName="true" encodeValue="true" name="city"
+        recordRawValue="Mountain+View" separator="="
+        value="${zipcode.City}" valueMode="USE_VALUE"/>
+    <parameter encodeName="true" encodeValue="true" name="state"
+        recordRawValue="CA" separator="=" value="${zipcode.State}" valueMode="USE_VALUE"/>
+    <parameter encodeName="true" encodeValue="true" name="country"
+        recordRawValue="United+States" separator="="
+        value="United States" valueMode="USE_VALUE"/>
+    <parameter encodeName="true" encodeValue="true"
+        name="credit_card_number" recordRawValue="4432-8015-6152-0454"
+        separator="=" value="4432-8015-6152-0454" valueMode="USE_VALUE"/>
+    <parameter encodeName="true" encodeValue="true"
+        name="credit_card_expiration_month" recordRawValue="1"
+        separator="=" value="1" valueMode="USE_VALUE"/>
+    <parameter encodeName="true" encodeValue="true"
+        name="credit_card_expiration_year" recordRawValue="2022"
+        separator="=" value="2022" valueMode="USE_VALUE"/>
+    <parameter encodeName="true" encodeValue="true"
+        name="credit_card_cvv" recordRawValue="672" separator="="
+        value="672" valueMode="USE_VALUE"/>
+    <header name="Accept" value="text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.9"/>
+    <header name="Accept-Encoding" value="gzip, deflate"/>
+    <header name="Accept-Language" value="en-US,en;q=0.9"/>
+    <header name="Cache-Control" value="max-age=0"/>
+    <header name="Content-Type" value="application/x-www-form-urlencoded"/>
+    <header name="Cookie" value="shop_session-id=f0cd1187-fcd3-42cb-9ff4-527525a1984c"/>
+    <header name="Host" value="34.89.214.38"/>
+    <header name="Origin" value="http://34.89.214.38"/>
+    <header name="Proxy-Connection" value="keep-alive"/>
+    <header name="Referer" value="http://34.89.214.38/cart"/>
+    <header name="Upgrade-Insecure-Requests" value="1"/>
+    <header name="User-Agent" value="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/91.0.4472.114 Safari/537.36 Edg/91.0.864.59"/>
+    <responseHeaders>HTTP/1.1 200 OK&#xd;
+Date: Mon, 28 Jun 2021 07:21:46 GMT&#xd;
+Content-Type: text/html; charset=utf-8&#xd;
+Transfer-Encoding: chunked</responseHeaders>
+    <record-html-infos extractorOccurence="3" extractorRegExp="false" htmlType="2"/>
+</http-action>

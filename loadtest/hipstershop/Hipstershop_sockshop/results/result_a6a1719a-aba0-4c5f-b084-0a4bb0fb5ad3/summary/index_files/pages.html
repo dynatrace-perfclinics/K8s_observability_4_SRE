@@ -1,0 +1,789 @@
+<html xmlns:fo="http://www.w3.org/1999/XSL/Format">
+<head>
+<META http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<title>Performance Testing Report</title>
+<link href="style.css" rel="stylesheet" type="text/css">
+</head>
+<body class="http_pages_template">
+<div id="leftnavigation">
+<div class="divHeader">NeoLoad Test Report</div>
+<div class="menu_wrapper">
+<div class="item">
+<a href="./summary.html">Summary</a>
+</div>
+<div class="subitem">
+<a href="./summary.html#report.resultssummary">Results summary</a>
+</div>
+<div class="subitem">
+<a href="./summary.html#report.statisticssummary">Statistics Summary</a>
+</div>
+<div class="subitem">
+<a href="./summary.html#report.hotspots">Hot spots</a>
+</div>
+<div class="subitem">
+<a href="./summary.html#report.errors">Errors</a>
+</div>
+<div class="subitem">
+<a href="./summary.html#report.alerts">Alerts</a>
+</div>
+<div class="subitem">
+<a href="./summary.html#report.summary.all">General statistics</a>
+</div>
+<div class="subitem">
+<a href="./summary.html#report.summary.transactions">Transaction statistics</a>
+</div>
+<div class="item">
+<a href="./settings.html">Execution context</a>
+</div>
+<div class="item">
+<a href="./servers.html">Servers</a>
+</div>
+<div class="item">
+<a href="./populations.html">Populations</a>
+</div>
+<div class="item">
+<a href="./virtual-users.html">User Paths</a>
+</div>
+<div class="item">
+<a href="./transactions.html">Transactions</a>
+</div>
+<div class="item">
+<a href="./pages.html">Pages</a>
+</div>
+<div class="item">
+<a href="./medias.html">Media Contents</a>
+</div>
+<div class="item">
+<a href="./pushmessages.html">Push messages</a>
+</div>
+<div class="item">
+<a href="./monitors.html">Monitors</a>
+</div>
+<div class="item">
+<a href="./scenario_scenario1.html">Scenario</a>
+</div>
+<div class="title">Main graphs</div>
+<div class="item">
+<a href="./Main graphs_pages.average.html">Average page response time</a>
+</div>
+<div class="item">
+<a href="./Main graphs_requests.average.html">Average request response time</a>
+</div>
+<div class="item">
+<a href="./Main graphs_transactions.average.html">Average response time (Transactions)</a>
+</div>
+<div class="item">
+<a href="./Main graphs_hits.html">Requests per second</a>
+</div>
+<div class="item">
+<a href="./Main graphs_errors.html">Errors</a>
+</div>
+<div class="item">
+<a href="./Main graphs_throughput.html">Throughput</a>
+</div>
+<div class="item">
+<a href="./Main graphs_pages.average.vu.html">Response time against load</a>
+</div>
+<div class="item">
+<a href="./Main graphs_percentile.html">Distribution of Transaction Durations</a>
+</div>
+</div>
+<div style="float: right;">
+<img style="margin-top: 10px; margin-bottom: 0px; margin-right: 4px" src="./images/logo_tricentis.png"></div>
+</div>
+<div id="content">
+<div class="divHeader">Pages</div>
+<div style="width: 100%; height: 20px;" id="report.shared">
+<div style="float:left" class="h1" id="statistics_summary_title">Shared Containers</div>
+</div>
+<div class="wrapper shared" align="center">
+<div align="center">
+<table class="hierarchical_shared_statistics_content_template">
+<tr>
+<th width="10%">Min</th><th width="10%">Avg</th><th width="10%">Max</th><th width="10%">Count</th><th width="10%">Err</th><th width="10%">% of Err</th><th width="10%">SLA Profile</th>
+</tr>
+<tr>
+<td colspan="7" class="line2">Empty list</td>
+</tr>
+</table>
+</div>
+</div>
+<div class="user-tableheader" style="width: 100%; height: 20px;" id="Hipstershop_Buyer">
+<div style="float:left" class="h1" id="statistics_summary_title">Hipstershop_Buyer</div>
+<a href="#Sockshop_Buyer" class="navigation next" title="Sockshop_Buyer"></a>
+</div>
+<div class="wrapper" align="center">
+<div align="center">
+<table class="hierarchical_statistics_content_template">
+<tr>
+<th width="10%">Min</th><th width="10%">Avg</th><th width="10%">Max</th><th width="10%">Count</th><th width="10%">Err</th><th width="10%">% of Err</th><th width="10%">SLA Profile</th>
+</tr>
+<tr>
+<td colspan="7" class="line1">
+<div class="tablelabel typped virtualuser" style="margin-left: 00px">Hipstershop_Buyer</div>
+</td>
+</tr>
+<tr>
+<td class="line1right bordered">1,060</td><td class="line1right bordered">1,104</td><td class="line1right bordered">1,163</td><td class="line1right bordered">50</td><td class="line1right bordered">0</td><td class="line1right bordered">0</td><td class="line1right bordered">
+                                -
+                            </td>
+</tr>
+<tr>
+<td colspan="7" class="line2">
+<div class="tablelabel typped container-blue" style="margin-left: 10px">Actions</div>
+</td>
+</tr>
+<tr>
+<td class="line2right bordered">4.14</td><td class="line2right bordered">45.3</td><td class="line2right bordered">88.4</td><td class="line2right bordered">1,173</td><td class="line2right bordered">0</td><td class="line2right bordered">0</td><td class="line2right bordered">
+                                -
+                            </td>
+</tr>
+<tr>
+<td colspan="7" class="line1">
+<div class="tablelabel typped container" style="margin-left: 20px">home Page</div>
+</td>
+</tr>
+<tr>
+<td class="line1right bordered">0.194</td><td class="line1right bordered">2.33</td><td class="line1right bordered">11.9</td><td class="line1right bordered">7,853</td><td class="line1right bordered">0</td><td class="line1right bordered">0</td><td class="line1right bordered">
+                                -
+                            </td>
+</tr>
+<tr>
+<td colspan="7" class="line2">
+<div class="tablelabel typped httppage" style="margin-left: 30px">/</div>
+</td>
+</tr>
+<tr>
+<td class="line2right bordered">0.194</td><td class="line2right bordered">2.33</td><td class="line2right bordered">11.9</td><td class="line2right bordered">7,853</td><td class="line2right bordered">0</td><td class="line2right bordered">0</td><td class="line2right bordered">
+                                -
+                            </td>
+</tr>
+<tr>
+<td colspan="7" class="line1">
+<div class="tablelabel typped container" style="margin-left: 20px">Then</div>
+</td>
+</tr>
+<tr>
+<td class="line1right bordered">0.384</td><td class="line1right bordered">4.09</td><td class="line1right bordered">13.9</td><td class="line1right bordered">7,826</td><td class="line1right bordered">0</td><td class="line1right bordered">0</td><td class="line1right bordered">
+                                -
+                            </td>
+</tr>
+<tr>
+<td colspan="7" class="line2">
+<div class="tablelabel typped container" style="margin-left: 30px">Select product</div>
+</td>
+</tr>
+<tr>
+<td class="line2right bordered">0.104</td><td class="line2right bordered">1.98</td><td class="line2right bordered">11</td><td class="line2right bordered">7,839</td><td class="line2right bordered">0</td><td class="line2right bordered">0</td><td class="line2right bordered">
+                                -
+                            </td>
+</tr>
+<tr>
+<td colspan="7" class="line1">
+<div class="tablelabel typped httppage" style="margin-left: 40px">/product/9SIQT8TOJO</div>
+</td>
+</tr>
+<tr>
+<td class="line1right bordered">0.104</td><td class="line1right bordered">1.98</td><td class="line1right bordered">11</td><td class="line1right bordered">7,839</td><td class="line1right bordered">0</td><td class="line1right bordered">0</td><td class="line1right bordered">
+                                -
+                            </td>
+</tr>
+<tr>
+<td colspan="7" class="line2">
+<div class="tablelabel typped container" style="margin-left: 30px">buyer</div>
+</td>
+</tr>
+<tr>
+<td class="line2right bordered">0.152</td><td class="line2right bordered">2.12</td><td class="line2right bordered">11.5</td><td class="line2right bordered">7,826</td><td class="line2right bordered">0</td><td class="line2right bordered">0</td><td class="line2right bordered">
+                                -
+                            </td>
+</tr>
+<tr>
+<td colspan="7" class="line1">
+<div class="tablelabel typped container" style="margin-left: 40px">add to cart</div>
+</td>
+</tr>
+<tr>
+<td class="line1right bordered">0.298</td><td class="line1right bordered">2.88</td><td class="line1right bordered">11.5</td><td class="line1right bordered">1,904</td><td class="line1right bordered">0</td><td class="line1right bordered">0</td><td class="line1right bordered">
+                                -
+                            </td>
+</tr>
+<tr>
+<td colspan="7" class="line2">
+<div class="tablelabel typped httppage" style="margin-left: 50px">/cart</div>
+</td>
+</tr>
+<tr>
+<td class="line2right bordered">0.298</td><td class="line2right bordered">2.88</td><td class="line2right bordered">11.5</td><td class="line2right bordered">1,904</td><td class="line2right bordered">0</td><td class="line2right bordered">0</td><td class="line2right bordered">
+                                -
+                            </td>
+</tr>
+<tr>
+<td colspan="7" class="line1">
+<div class="tablelabel typped container" style="margin-left: 40px">select category</div>
+</td>
+</tr>
+<tr>
+<td class="line1right bordered">0.152</td><td class="line1right bordered">1.87</td><td class="line1right bordered">11.4</td><td class="line1right bordered">5,922</td><td class="line1right bordered">0</td><td class="line1right bordered">0</td><td class="line1right bordered">
+                                -
+                            </td>
+</tr>
+<tr>
+<td colspan="7" class="line2">
+<div class="tablelabel typped httppage" style="margin-left: 50px">/product/LS4PSXUNUM</div>
+</td>
+</tr>
+<tr>
+<td class="line2right bordered">0.152</td><td class="line2right bordered">1.87</td><td class="line2right bordered">11.4</td><td class="line2right bordered">5,922</td><td class="line2right bordered">0</td><td class="line2right bordered">0</td><td class="line2right bordered">
+                                -
+                            </td>
+</tr>
+<tr>
+<td colspan="7" class="line1">
+<div class="tablelabel typped container" style="margin-left: 20px">View Cart</div>
+</td>
+</tr>
+<tr>
+<td class="line1right bordered">0.156</td><td class="line1right bordered">2.05</td><td class="line1right bordered">7.56</td><td class="line1right bordered">1,174</td><td class="line1right bordered">0</td><td class="line1right bordered">0</td><td class="line1right bordered">
+                                -
+                            </td>
+</tr>
+<tr>
+<td colspan="7" class="line2">
+<div class="tablelabel typped httppage" style="margin-left: 30px">/cart</div>
+</td>
+</tr>
+<tr>
+<td class="line2right bordered">0.156</td><td class="line2right bordered">2.05</td><td class="line2right bordered">7.56</td><td class="line2right bordered">1,174</td><td class="line2right bordered">0</td><td class="line2right bordered">0</td><td class="line2right bordered">
+                                -
+                            </td>
+</tr>
+<tr>
+<td colspan="7" class="line1">
+<div class="tablelabel typped container" style="margin-left: 20px">Place order</div>
+</td>
+</tr>
+<tr>
+<td class="line1right bordered">0.282</td><td class="line1right bordered">1.63</td><td class="line1right bordered">12</td><td class="line1right bordered">1,173</td><td class="line1right bordered">0</td><td class="line1right bordered">0</td><td class="line1right bordered">
+                                -
+                            </td>
+</tr>
+<tr>
+<td colspan="7" class="line2">
+<div class="tablelabel typped httppage" style="margin-left: 30px">/cart/checkout</div>
+</td>
+</tr>
+<tr>
+<td class="line2right bordered">0.282</td><td class="line2right bordered">1.63</td><td class="line2right bordered">12</td><td class="line2right bordered">1,173</td><td class="line2right bordered">0</td><td class="line2right bordered">0</td><td class="line2right bordered">
+                                -
+                            </td>
+</tr>
+</table>
+</div>
+</div>
+<div class="user-tableheader" style="width: 100%; height: 20px;" id="Sockshop_Buyer">
+<div style="float:left" class="h1" id="statistics_summary_title">Sockshop_Buyer</div>
+<a href="#Hipstershop_Buyer" class="navigation previous" title="Hipstershop_Buyer"></a>
+</div>
+<div class="wrapper" align="center">
+<div align="center">
+<table class="hierarchical_statistics_content_template">
+<tr>
+<th width="10%">Min</th><th width="10%">Avg</th><th width="10%">Max</th><th width="10%">Count</th><th width="10%">Err</th><th width="10%">% of Err</th><th width="10%">SLA Profile</th>
+</tr>
+<tr>
+<td colspan="7" class="line2">
+<div class="tablelabel typped virtualuser" style="margin-left: 00px">Sockshop_Buyer</div>
+</td>
+</tr>
+<tr>
+<td class="line2right bordered">1,089</td><td class="line2right bordered">1,171</td><td class="line2right bordered">1,292</td><td class="line2right bordered">50</td><td class="line2right bordered">0</td><td class="line2right bordered">0</td><td class="line2right bordered">
+                                -
+                            </td>
+</tr>
+<tr>
+<td colspan="7" class="line1">
+<div class="tablelabel typped container-blue" style="margin-left: 10px">Actions</div>
+</td>
+</tr>
+<tr>
+<td class="line1right bordered">54.2</td><td class="line1right bordered">115.3</td><td class="line1right bordered">174.5</td><td class="line1right bordered">478</td><td class="line1right bordered">0</td><td class="line1right bordered">0</td><td class="line1right bordered">
+                                -
+                            </td>
+</tr>
+<tr>
+<td colspan="7" class="line2">
+<div class="tablelabel typped container" style="margin-left: 20px">Home PAge</div>
+</td>
+</tr>
+<tr>
+<td class="line2right bordered">3.13</td><td class="line2right bordered">9.91</td><td class="line2right bordered">29.6</td><td class="line2right bordered">526</td><td class="line2right bordered">0</td><td class="line2right bordered">0</td><td class="line2right bordered">
+                                -
+                            </td>
+</tr>
+<tr>
+<td colspan="7" class="line1">
+<div class="tablelabel typped httppage" style="margin-left: 30px">/</div>
+</td>
+</tr>
+<tr>
+<td class="line1right bordered">0.774</td><td class="line1right bordered">5.46</td><td class="line1right bordered">25.5</td><td class="line1right bordered">528</td><td class="line1right bordered">0</td><td class="line1right bordered">0</td><td class="line1right bordered">
+                                -
+                            </td>
+</tr>
+<tr>
+<td colspan="7" class="line2">
+<div class="tablelabel typped httppage" style="margin-left: 30px">/topbar.html</div>
+</td>
+</tr>
+<tr>
+<td class="line2right bordered">0.027</td><td class="line2right bordered">0.203</td><td class="line2right bordered">0.873</td><td class="line2right bordered">528</td><td class="line2right bordered">0</td><td class="line2right bordered">0</td><td class="line2right bordered">
+                                -
+                            </td>
+</tr>
+<tr>
+<td colspan="7" class="line1">
+<div class="tablelabel typped httppage" style="margin-left: 30px">/navbar.html</div>
+</td>
+</tr>
+<tr>
+<td class="line1right bordered">0.091</td><td class="line1right bordered">0.514</td><td class="line1right bordered">1.27</td><td class="line1right bordered">527</td><td class="line1right bordered">0</td><td class="line1right bordered">0</td><td class="line1right bordered">
+                                -
+                            </td>
+</tr>
+<tr>
+<td colspan="7" class="line2">
+<div class="tablelabel typped httppage" style="margin-left: 30px">/footer.html</div>
+</td>
+</tr>
+<tr>
+<td class="line2right bordered">1.79</td><td class="line2right bordered">3.73</td><td class="line2right bordered">7.48</td><td class="line2right bordered">526</td><td class="line2right bordered">0</td><td class="line2right bordered">0</td><td class="line2right bordered">
+                                -
+                            </td>
+</tr>
+<tr>
+<td colspan="7" class="line1">
+<div class="tablelabel typped container" style="margin-left: 20px">catalogue</div>
+</td>
+</tr>
+<tr>
+<td class="line1right bordered">2.4</td><td class="line1right bordered">5.87</td><td class="line1right bordered">13</td><td class="line1right bordered">2,042</td><td class="line1right bordered">0</td><td class="line1right bordered">0</td><td class="line1right bordered">
+                                -
+                            </td>
+</tr>
+<tr>
+<td colspan="7" class="line2">
+<div class="tablelabel typped httppage" style="margin-left: 30px">/category.html</div>
+</td>
+</tr>
+<tr>
+<td class="line2right bordered">0.739</td><td class="line2right bordered">3.3</td><td class="line2right bordered">10.05</td><td class="line2right bordered">2,045</td><td class="line2right bordered">0</td><td class="line2right bordered">0</td><td class="line2right bordered">
+                                -
+                            </td>
+</tr>
+<tr>
+<td colspan="7" class="line1">
+<div class="tablelabel typped httppage" style="margin-left: 30px">/topbar.html</div>
+</td>
+</tr>
+<tr>
+<td class="line1right bordered">0.023</td><td class="line1right bordered">0.128</td><td class="line1right bordered">0.889</td><td class="line1right bordered">2,045</td><td class="line1right bordered">0</td><td class="line1right bordered">0</td><td class="line1right bordered">
+                                -
+                            </td>
+</tr>
+<tr>
+<td colspan="7" class="line2">
+<div class="tablelabel typped httppage" style="margin-left: 30px">/navbar.html</div>
+</td>
+</tr>
+<tr>
+<td class="line2right bordered">0.105</td><td class="line2right bordered">0.515</td><td class="line2right bordered">1.61</td><td class="line2right bordered">2,045</td><td class="line2right bordered">0</td><td class="line2right bordered">0</td><td class="line2right bordered">
+                                -
+                            </td>
+</tr>
+<tr>
+<td colspan="7" class="line1">
+<div class="tablelabel typped httppage" style="margin-left: 30px">/footer.html</div>
+</td>
+</tr>
+<tr>
+<td class="line1right bordered">1.43</td><td class="line1right bordered">1.93</td><td class="line1right bordered">3.3</td><td class="line1right bordered">2,042</td><td class="line1right bordered">0</td><td class="line1right bordered">0</td><td class="line1right bordered">
+                                -
+                            </td>
+</tr>
+<tr>
+<td colspan="7" class="line2">
+<div class="tablelabel typped container" style="margin-left: 20px">filter</div>
+</td>
+</tr>
+<tr>
+<td class="line2right bordered">1.89</td><td class="line2right bordered">3.76</td><td class="line2right bordered">15.7</td><td class="line2right bordered">2,036</td><td class="line2right bordered">0</td><td class="line2right bordered">0</td><td class="line2right bordered">
+                                -
+                            </td>
+</tr>
+<tr>
+<td colspan="7" class="line1">
+<div class="tablelabel typped httppage" style="margin-left: 30px">/category.html</div>
+</td>
+</tr>
+<tr>
+<td class="line1right bordered">0.267</td><td class="line1right bordered">1.28</td><td class="line1right bordered">13</td><td class="line1right bordered">2,040</td><td class="line1right bordered">0</td><td class="line1right bordered">0</td><td class="line1right bordered">
+                                -
+                            </td>
+</tr>
+<tr>
+<td colspan="7" class="line2">
+<div class="tablelabel typped httppage" style="margin-left: 30px">/topbar.html</div>
+</td>
+</tr>
+<tr>
+<td class="line2right bordered">0.023</td><td class="line2right bordered">0.128</td><td class="line2right bordered">0.926</td><td class="line2right bordered">2,039</td><td class="line2right bordered">0</td><td class="line2right bordered">0</td><td class="line2right bordered">
+                                -
+                            </td>
+</tr>
+<tr>
+<td colspan="7" class="line1">
+<div class="tablelabel typped httppage" style="margin-left: 30px">/navbar.html</div>
+</td>
+</tr>
+<tr>
+<td class="line1right bordered">0.071</td><td class="line1right bordered">0.462</td><td class="line1right bordered">1.55</td><td class="line1right bordered">2,039</td><td class="line1right bordered">0</td><td class="line1right bordered">0</td><td class="line1right bordered">
+                                -
+                            </td>
+</tr>
+<tr>
+<td colspan="7" class="line2">
+<div class="tablelabel typped httppage" style="margin-left: 30px">/footer.html</div>
+</td>
+</tr>
+<tr>
+<td class="line2right bordered">1.42</td><td class="line2right bordered">1.88</td><td class="line2right bordered">3.67</td><td class="line2right bordered">2,036</td><td class="line2right bordered">0</td><td class="line2right bordered">0</td><td class="line2right bordered">
+                                -
+                            </td>
+</tr>
+<tr>
+<td colspan="7" class="line1">
+<div class="tablelabel typped container" style="margin-left: 20px">Then</div>
+</td>
+</tr>
+<tr>
+<td class="line1right bordered">6.36</td><td class="line1right bordered">12</td><td class="line1right bordered">18.7</td><td class="line1right bordered">2,011</td><td class="line1right bordered">0</td><td class="line1right bordered">0</td><td class="line1right bordered">
+                                -
+                            </td>
+</tr>
+<tr>
+<td colspan="7" class="line2">
+<div class="tablelabel typped container" style="margin-left: 30px">select product</div>
+</td>
+</tr>
+<tr>
+<td class="line2right bordered">2.19</td><td class="line2right bordered">3.72</td><td class="line2right bordered">6.96</td><td class="line2right bordered">2,028</td><td class="line2right bordered">0</td><td class="line2right bordered">0</td><td class="line2right bordered">
+                                -
+                            </td>
+</tr>
+<tr>
+<td colspan="7" class="line1">
+<div class="tablelabel typped httppage" style="margin-left: 40px">/detail.html</div>
+</td>
+</tr>
+<tr>
+<td class="line1right bordered">0.146</td><td class="line1right bordered">0.706</td><td class="line1right bordered">2.72</td><td class="line1right bordered">2,036</td><td class="line1right bordered">0</td><td class="line1right bordered">0</td><td class="line1right bordered">
+                                -
+                            </td>
+</tr>
+<tr>
+<td colspan="7" class="line2">
+<div class="tablelabel typped httppage" style="margin-left: 40px">/topbar.html</div>
+</td>
+</tr>
+<tr>
+<td class="line2right bordered">0.022</td><td class="line2right bordered">0.117</td><td class="line2right bordered">0.705</td><td class="line2right bordered">2,034</td><td class="line2right bordered">0</td><td class="line2right bordered">0</td><td class="line2right bordered">
+                                -
+                            </td>
+</tr>
+<tr>
+<td colspan="7" class="line1">
+<div class="tablelabel typped httppage" style="margin-left: 40px">/navbar.html</div>
+</td>
+</tr>
+<tr>
+<td class="line1right bordered">1.41</td><td class="line1right bordered">1.89</td><td class="line1right bordered">3.31</td><td class="line1right bordered">2,028</td><td class="line1right bordered">0</td><td class="line1right bordered">0</td><td class="line1right bordered">
+                                -
+                            </td>
+</tr>
+<tr>
+<td colspan="7" class="line2">
+<div class="tablelabel typped httppage" style="margin-left: 40px">/footer.html</div>
+</td>
+</tr>
+<tr>
+<td class="line2right bordered">0.563</td><td class="line2right bordered">1.01</td><td class="line2right bordered">2.87</td><td class="line2right bordered">2,028</td><td class="line2right bordered">0</td><td class="line2right bordered">0</td><td class="line2right bordered">
+                                -
+                            </td>
+</tr>
+<tr>
+<td colspan="7" class="line1">
+<div class="tablelabel typped container" style="margin-left: 30px">add to cart</div>
+</td>
+</tr>
+<tr>
+<td class="line1right bordered">4.14</td><td class="line1right bordered">8.25</td><td class="line1right bordered">16.3</td><td class="line1right bordered">2,011</td><td class="line1right bordered">0</td><td class="line1right bordered">0</td><td class="line1right bordered">
+                                -
+                            </td>
+</tr>
+<tr>
+<td colspan="7" class="line2">
+<div class="tablelabel typped httppage" style="margin-left: 40px">/cart</div>
+</td>
+</tr>
+<tr>
+<td class="line2right bordered">0.768</td><td class="line2right bordered">1.23</td><td class="line2right bordered">2.63</td><td class="line2right bordered">2,020</td><td class="line2right bordered">0</td><td class="line2right bordered">0</td><td class="line2right bordered">
+                                -
+                            </td>
+</tr>
+<tr>
+<td colspan="7" class="line1">
+<div class="tablelabel typped httppage" style="margin-left: 40px">/detail.html</div>
+</td>
+</tr>
+<tr>
+<td class="line1right bordered">1.22</td><td class="line1right bordered">3.96</td><td class="line1right bordered">11.3</td><td class="line1right bordered">2,016</td><td class="line1right bordered">0</td><td class="line1right bordered">0</td><td class="line1right bordered">
+                                -
+                            </td>
+</tr>
+<tr>
+<td colspan="7" class="line2">
+<div class="tablelabel typped httppage" style="margin-left: 40px">/topbar.html</div>
+</td>
+</tr>
+<tr>
+<td class="line2right bordered">0.024</td><td class="line2right bordered">0.119</td><td class="line2right bordered">1.13</td><td class="line2right bordered">2,015</td><td class="line2right bordered">0</td><td class="line2right bordered">0</td><td class="line2right bordered">
+                                -
+                            </td>
+</tr>
+<tr>
+<td colspan="7" class="line1">
+<div class="tablelabel typped httppage" style="margin-left: 40px">/navbar.html</div>
+</td>
+</tr>
+<tr>
+<td class="line1right bordered">1.43</td><td class="line1right bordered">1.92</td><td class="line1right bordered">3.69</td><td class="line1right bordered">2,012</td><td class="line1right bordered">0</td><td class="line1right bordered">0</td><td class="line1right bordered">
+                                -
+                            </td>
+</tr>
+<tr>
+<td colspan="7" class="line2">
+<div class="tablelabel typped httppage" style="margin-left: 40px">/footer.html</div>
+</td>
+</tr>
+<tr>
+<td class="line2right bordered">0.567</td><td class="line2right bordered">1.01</td><td class="line2right bordered">2.16</td><td class="line2right bordered">2,011</td><td class="line2right bordered">0</td><td class="line2right bordered">0</td><td class="line2right bordered">
+                                -
+                            </td>
+</tr>
+<tr>
+<td colspan="7" class="line1">
+<div class="tablelabel typped container" style="margin-left: 20px">top deals</div>
+</td>
+</tr>
+<tr>
+<td class="line1right bordered">2.49</td><td class="line1right bordered">4.81</td><td class="line1right bordered">8.91</td><td class="line1right bordered">487</td><td class="line1right bordered">0</td><td class="line1right bordered">0</td><td class="line1right bordered">
+                                -
+                            </td>
+</tr>
+<tr>
+<td colspan="7" class="line2">
+<div class="tablelabel typped httppage" style="margin-left: 30px">/index.html</div>
+</td>
+</tr>
+<tr>
+<td class="line2right bordered">0.175</td><td class="line2right bordered">0.784</td><td class="line2right bordered">2.02</td><td class="line2right bordered">489</td><td class="line2right bordered">0</td><td class="line2right bordered">0</td><td class="line2right bordered">
+                                -
+                            </td>
+</tr>
+<tr>
+<td colspan="7" class="line1">
+<div class="tablelabel typped httppage" style="margin-left: 30px">/topbar.html</div>
+</td>
+</tr>
+<tr>
+<td class="line1right bordered">0.023</td><td class="line1right bordered">0.128</td><td class="line1right bordered">0.585</td><td class="line1right bordered">489</td><td class="line1right bordered">0</td><td class="line1right bordered">0</td><td class="line1right bordered">
+                                -
+                            </td>
+</tr>
+<tr>
+<td colspan="7" class="line2">
+<div class="tablelabel typped httppage" style="margin-left: 30px">/navbar.html</div>
+</td>
+</tr>
+<tr>
+<td class="line2right bordered">0.574</td><td class="line2right bordered">1.06</td><td class="line2right bordered">2.35</td><td class="line2right bordered">489</td><td class="line2right bordered">0</td><td class="line2right bordered">0</td><td class="line2right bordered">
+                                -
+                            </td>
+</tr>
+<tr>
+<td colspan="7" class="line1">
+<div class="tablelabel typped httppage" style="margin-left: 30px">/detail.html</div>
+</td>
+</tr>
+<tr>
+<td class="line1right bordered">0.135</td><td class="line1right bordered">0.64</td><td class="line1right bordered">2.09</td><td class="line1right bordered">489</td><td class="line1right bordered">0</td><td class="line1right bordered">0</td><td class="line1right bordered">
+                                -
+                            </td>
+</tr>
+<tr>
+<td colspan="7" class="line2">
+<div class="tablelabel typped httppage" style="margin-left: 30px">/topbar.html_1</div>
+</td>
+</tr>
+<tr>
+<td class="line2right bordered">0.024</td><td class="line2right bordered">0.128</td><td class="line2right bordered">0.884</td><td class="line2right bordered">488</td><td class="line2right bordered">0</td><td class="line2right bordered">0</td><td class="line2right bordered">
+                                -
+                            </td>
+</tr>
+<tr>
+<td colspan="7" class="line1">
+<div class="tablelabel typped httppage" style="margin-left: 30px">/navbar.html_1</div>
+</td>
+</tr>
+<tr>
+<td class="line1right bordered">1.42</td><td class="line1right bordered">1.94</td><td class="line1right bordered">3.02</td><td class="line1right bordered">487</td><td class="line1right bordered">0</td><td class="line1right bordered">0</td><td class="line1right bordered">
+                                -
+                            </td>
+</tr>
+<tr>
+<td colspan="7" class="line2">
+<div class="tablelabel typped httppage" style="margin-left: 30px">/footer.html_1</div>
+</td>
+</tr>
+<tr>
+<td class="line2right bordered">0.024</td><td class="line2right bordered">0.128</td><td class="line2right bordered">0.602</td><td class="line2right bordered">487</td><td class="line2right bordered">0</td><td class="line2right bordered">0</td><td class="line2right bordered">
+                                -
+                            </td>
+</tr>
+<tr>
+<td colspan="7" class="line1">
+<div class="tablelabel typped container" style="margin-left: 20px">Then</div>
+</td>
+</tr>
+<tr>
+<td class="line1right bordered">4.27</td><td class="line1right bordered">8.68</td><td class="line1right bordered">14.1</td><td class="line1right bordered">482</td><td class="line1right bordered">0</td><td class="line1right bordered">0</td><td class="line1right bordered">
+                                -
+                            </td>
+</tr>
+<tr>
+<td colspan="7" class="line2">
+<div class="tablelabel typped container" style="margin-left: 30px">add to carts</div>
+</td>
+</tr>
+<tr>
+<td class="line2right bordered">4.27</td><td class="line2right bordered">8.68</td><td class="line2right bordered">14.1</td><td class="line2right bordered">482</td><td class="line2right bordered">0</td><td class="line2right bordered">0</td><td class="line2right bordered">
+                                -
+                            </td>
+</tr>
+<tr>
+<td colspan="7" class="line1">
+<div class="tablelabel typped httppage" style="margin-left: 40px">/cart</div>
+</td>
+</tr>
+<tr>
+<td class="line1right bordered">0.791</td><td class="line1right bordered">1.25</td><td class="line1right bordered">2.62</td><td class="line1right bordered">483</td><td class="line1right bordered">0</td><td class="line1right bordered">0</td><td class="line1right bordered">
+                                -
+                            </td>
+</tr>
+<tr>
+<td colspan="7" class="line2">
+<div class="tablelabel typped httppage" style="margin-left: 40px">/detail.html</div>
+</td>
+</tr>
+<tr>
+<td class="line2right bordered">0.558</td><td class="line2right bordered">2.11</td><td class="line2right bordered">5.95</td><td class="line2right bordered">483</td><td class="line2right bordered">0</td><td class="line2right bordered">0</td><td class="line2right bordered">
+                                -
+                            </td>
+</tr>
+<tr>
+<td colspan="7" class="line1">
+<div class="tablelabel typped httppage" style="margin-left: 40px">/topbar.html</div>
+</td>
+</tr>
+<tr>
+<td class="line1right bordered">0.025</td><td class="line1right bordered">0.118</td><td class="line1right bordered">0.597</td><td class="line1right bordered">483</td><td class="line1right bordered">0</td><td class="line1right bordered">0</td><td class="line1right bordered">
+                                -
+                            </td>
+</tr>
+<tr>
+<td colspan="7" class="line2">
+<div class="tablelabel typped httppage" style="margin-left: 40px">/navbar.html</div>
+</td>
+</tr>
+<tr>
+<td class="line2right bordered">1.43</td><td class="line2right bordered">1.92</td><td class="line2right bordered">2.9</td><td class="line2right bordered">483</td><td class="line2right bordered">0</td><td class="line2right bordered">0</td><td class="line2right bordered">
+                                -
+                            </td>
+</tr>
+<tr>
+<td colspan="7" class="line1">
+<div class="tablelabel typped httppage" style="margin-left: 40px">/footer.html</div>
+</td>
+</tr>
+<tr>
+<td class="line1right bordered">0.025</td><td class="line1right bordered">0.116</td><td class="line1right bordered">0.68</td><td class="line1right bordered">482</td><td class="line1right bordered">0</td><td class="line1right bordered">0</td><td class="line1right bordered">
+                                -
+                            </td>
+</tr>
+<tr>
+<td colspan="7" class="line2">
+<div class="tablelabel typped container" style="margin-left: 20px">go to cart</div>
+</td>
+</tr>
+<tr>
+<td class="line2right bordered">3.21</td><td class="line2right bordered">6.17</td><td class="line2right bordered">12.4</td><td class="line2right bordered">478</td><td class="line2right bordered">0</td><td class="line2right bordered">0</td><td class="line2right bordered">
+                                -
+                            </td>
+</tr>
+<tr>
+<td colspan="7" class="line1">
+<div class="tablelabel typped httppage" style="margin-left: 30px">/basket.html</div>
+</td>
+</tr>
+<tr>
+<td class="line1right bordered">0.163</td><td class="line1right bordered">0.679</td><td class="line1right bordered">2.24</td><td class="line1right bordered">480</td><td class="line1right bordered">0</td><td class="line1right bordered">0</td><td class="line1right bordered">
+                                -
+                            </td>
+</tr>
+<tr>
+<td colspan="7" class="line2">
+<div class="tablelabel typped httppage" style="margin-left: 30px">/topbar.html</div>
+</td>
+</tr>
+<tr>
+<td class="line2right bordered">0.023</td><td class="line2right bordered">0.121</td><td class="line2right bordered">0.672</td><td class="line2right bordered">479</td><td class="line2right bordered">0</td><td class="line2right bordered">0</td><td class="line2right bordered">
+                                -
+                            </td>
+</tr>
+<tr>
+<td colspan="7" class="line1">
+<div class="tablelabel typped httppage" style="margin-left: 30px">/navbar.html</div>
+</td>
+</tr>
+<tr>
+<td class="line1right bordered">0.072</td><td class="line1right bordered">0.439</td><td class="line1right bordered">1.47</td><td class="line1right bordered">479</td><td class="line1right bordered">0</td><td class="line1right bordered">0</td><td class="line1right bordered">
+                                -
+                            </td>
+</tr>
+<tr>
+<td colspan="7" class="line2">
+<div class="tablelabel typped httppage" style="margin-left: 30px">/footer.html</div>
+</td>
+</tr>
+<tr>
+<td class="line2right bordered">1.43</td><td class="line2right bordered">1.89</td><td class="line2right bordered">3.35</td><td class="line2right bordered">478</td><td class="line2right bordered">0</td><td class="line2right bordered">0</td><td class="line2right bordered">
+                                -
+                            </td>
+</tr>
+</table>
+</div>
+</div>
+</div>
+</body>
+</html>

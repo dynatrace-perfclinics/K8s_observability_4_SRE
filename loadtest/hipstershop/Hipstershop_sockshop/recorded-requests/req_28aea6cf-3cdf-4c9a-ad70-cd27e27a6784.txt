@@ -1,0 +1,12 @@
+GET http://ec2-54-229-141-49.eu-west-1.compute.amazonaws.com/footer.html HTTP/1.1
+Host: ec2-54-229-141-49.eu-west-1.compute.amazonaws.com
+User-Agent: Mozilla/5.0 (X11; Ubuntu; Linux x86_64; rv:67.0) Gecko/20100101 Firefox/67.0
+Accept: text/html, */*; q=0.01
+Accept-Language: fr,fr-FR;q=0.8,en-US;q=0.5,en;q=0.3
+Accept-Encoding: gzip, deflate
+Referer: http://ec2-54-229-141-49.eu-west-1.compute.amazonaws.com/detail.html?id=819e1fbf-8b7e-4f6d-811f-693534916a8b
+X-Requested-With: XMLHttpRequest
+x-dtpc: 1$353300270_641h4vIMBPMMBFDNOMEDDOXPIDDAMOIJCPEUAOe-1
+Connection: keep-alive
+Cookie: _TRAEFIK_BACKEND=http://front-end:8079; rxVisitor=1559753258800B7753AIJRSRVQTPSH7BT2F0HVP9G3M99; dtPC=1$353300270_641h4vIMBPMMBFDNOMEDDOXPIDDAMOIJCPEUAO; rxvt=1559755101090|1559753258804; dtSa=-; dtLatC=5; md.sid=s%3Ap4Q-8ptuUAN2axSBM_GXcy6PAuvHWfiM.3E4e92Tact%2By6aHCBAPwKl3u2vNLxkSdD%2BZxujzWULQ; dtCookie=1$A946CA27656D726CF8E015468B3B1E7C|ea7c4b59f27d43eb|1
+

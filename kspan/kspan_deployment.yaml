@@ -1,0 +1,24 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: kspanservice
+spec:
+  selector:
+    matchLabels:
+      app: kspanservice
+      product: kspan
+  template:
+    metadata:
+      labels:
+        app: kspanservice
+        product: kspan
+    spec:
+      serviceAccountName: kspan-sa
+      terminationGracePeriodSeconds: 5
+      containers:
+        - name: kspan
+          image: weaveworks/kspan:v0.0
+          ports:
+            - containerPort: 8080
+      dnsPolicy: ClusterFirst
+      restartPolicy: Always

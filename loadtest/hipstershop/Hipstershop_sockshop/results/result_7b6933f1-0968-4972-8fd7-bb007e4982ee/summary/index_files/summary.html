@@ -1,0 +1,388 @@
+<html xmlns:fo="http://www.w3.org/1999/XSL/Format">
+<head>
+<META http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<title>Performance Testing Report</title>
+<link href="style.css" rel="stylesheet" type="text/css">
+</head>
+<body class="match_report_template">
+<div id="leftnavigation">
+<div class="divHeader">NeoLoad Test Report</div>
+<div class="menu_wrapper">
+<div class="item">
+<a href="./summary.html">Summary</a>
+</div>
+<div class="subitem">
+<a href="./summary.html#report.resultssummary">Results summary</a>
+</div>
+<div class="subitem">
+<a href="./summary.html#report.statisticssummary">Statistics Summary</a>
+</div>
+<div class="subitem">
+<a href="./summary.html#report.hotspots">Hot spots</a>
+</div>
+<div class="subitem">
+<a href="./summary.html#report.errors">Errors</a>
+</div>
+<div class="subitem">
+<a href="./summary.html#report.alerts">Alerts</a>
+</div>
+<div class="subitem">
+<a href="./summary.html#report.summary.all">General statistics</a>
+</div>
+<div class="subitem">
+<a href="./summary.html#report.summary.transactions">Transaction statistics</a>
+</div>
+<div class="item">
+<a href="./settings.html">Execution context</a>
+</div>
+<div class="item">
+<a href="./servers.html">Servers</a>
+</div>
+<div class="item">
+<a href="./populations.html">Populations</a>
+</div>
+<div class="item">
+<a href="./virtual-users.html">User Paths</a>
+</div>
+<div class="item">
+<a href="./transactions.html">Transactions</a>
+</div>
+<div class="item">
+<a href="./pages.html">Pages</a>
+</div>
+<div class="item">
+<a href="./medias.html">Media Contents</a>
+</div>
+<div class="item">
+<a href="./pushmessages.html">Push messages</a>
+</div>
+<div class="item">
+<a href="./monitors.html">Monitors</a>
+</div>
+<div class="item">
+<a href="./scenario_scenario1.html">Scenario</a>
+</div>
+<div class="title">Main graphs</div>
+<div class="item">
+<a href="./Main graphs_pages.average.html">Average page response time</a>
+</div>
+<div class="item">
+<a href="./Main graphs_requests.average.html">Average request response time</a>
+</div>
+<div class="item">
+<a href="./Main graphs_transactions.average.html">Average response time (Transactions)</a>
+</div>
+<div class="item">
+<a href="./Main graphs_hits.html">Requests per second</a>
+</div>
+<div class="item">
+<a href="./Main graphs_errors.html">Errors</a>
+</div>
+<div class="item">
+<a href="./Main graphs_throughput.html">Throughput</a>
+</div>
+<div class="item">
+<a href="./Main graphs_pages.average.vu.html">Response time against load</a>
+</div>
+<div class="item">
+<a href="./Main graphs_percentile.html">Distribution of Transaction Durations</a>
+</div>
+</div>
+<div style="float: right;">
+<img style="margin-top: 10px; margin-bottom: 0px; margin-right: 4px" src="./images/logo_tricentis.png"></div>
+</div>
+<div id="content" class="match_report_summary_template">
+<div class="divHeader">Summary</div>
+<div style="width: 100%; height: 20px;" id="report.resultssummary">
+<div style="float:left" class="h1" id="statistics_summary_title">Results summary</div>
+</div>
+<div class="wrapper" align="center" name="summary" id="summary">
+<div align="center">
+<table class="simpleResultSummary_template">
+<tr>
+<td class="titleCell line2">Name</td><td class="line2">10:32 - 23 Sep 2021</td><td class="titleCell line2">Project</td><td class="line2" width="35%">Hipstershop_sockshop</td>
+</tr>
+<tr>
+<td class="titleCell line2" nowrap rowspan="2">Description</td><td class="line2" rowspan="2" valign="top"></td><td class="titleCell line2">Scenario</td><td class="line2">scenario1</td>
+</tr>
+<tr>
+<td class="titleCell line2" rowspan="3">Load Policy</td><td class="line2" rowspan="3" valign="top" width="55%">
+<ul class="valuesList" style="padding-left:0px">
+<li class="listItem">The population&nbsp;<strong>HipsterShop_buyer</strong>&nbsp;
+            is ramp up&nbsp;
+            from&nbsp;<strong>20</strong>&nbsp;users&nbsp;
+            adding&nbsp;<strong>30</strong>&nbsp;users&nbsp;
+            every&nbsp;<strong>3.0</strong>&nbsp;minutes,&nbsp;to a maximum of &nbsp;<strong>50</strong>&nbsp;users.
+        </li>
+<li class="listItem">The population&nbsp;<strong>Sockshop_Buyer</strong>&nbsp;
+            is ramp up&nbsp;
+            from&nbsp;<strong>20</strong>&nbsp;users&nbsp;
+            adding&nbsp;<strong>30</strong>&nbsp;users&nbsp;
+            every&nbsp;<strong>5.0</strong>&nbsp;minutes,&nbsp;to a maximum of &nbsp;<strong>50</strong>&nbsp;users.
+        </li>
+</ul>
+</td>
+</tr>
+<tr>
+<td class="titleCell line2">Status</td><td class="line2"><img src="images/status_PASS.png" alt="images/status_PASS.png" style="vertical-align: middle;">  Passed</td>
+</tr>
+<tr>
+<td class="titleCell line2">Start date</td><td class="line2">Sep 23, 2021 10:32:23 AM</td>
+</tr>
+<tr>
+<td class="titleCell line2">End date</td><td class="line2">Sep 23, 2021 10:36:58 AM</td><td class="titleCell line2" rowspan="2">Stop Policy</td><td class="line2" rowspan="2" valign="top" width="55%">
+<ul class="valuesList" style="padding-left:0px">
+<li class="listItem">Population&nbsp;<strong>HipsterShop_buyer</strong>: immediate.
+        </li>
+<li class="listItem">Population&nbsp;<strong>Sockshop_Buyer</strong>: immediate.
+        </li>
+</ul>
+</td>
+</tr>
+<tr>
+<td class="titleCell line2">Duration</td><td class="line2">00:04:34</td>
+</tr>
+<tr>
+<td class="titleCell line2">Termination reason</td><td class="line2">Manual action</td><td class="titleCell line2">Filters</td><td class="line2">
+<div>None</div>
+</td>
+</tr>
+<tr>
+<td class="titleCell line2">LG Hosts</td><td class="line2">localhost:7100</td><td class="titleCell line2" nowrap>Debug</td><td class="line2">Disabled</td>
+</tr>
+</table>
+</div>
+</div>
+<div style="width: 100%; height: 20px;" id="report.statisticssummary">
+<div style="float:left" class="h1" id="statistics_summary_title">Statistics Summary</div>
+</div>
+<div class="wrapper main_summary_content_template" align="center">
+<div align="center">
+<table style="border: 0" class="statistics_summary_template">
+<tr>
+<td nowrap class="field1">Total pages</td><td>6713</td><td><img src="images/severity_none.png" alt="images/severity_none.png" style="vertical-align: middle;"></td><td width="220" nowrap class="field1">Average pages/s</td><td>24.4</td><td><img src="images/severity_none.png" alt="images/severity_none.png" style="vertical-align: middle;"></td>
+</tr>
+<tr>
+<td nowrap class="field1">Total requests</td><td>32437</td><td><img src="images/severity_none.png" alt="images/severity_none.png" style="vertical-align: middle;"></td><td width="220" nowrap class="field1">Average requests/s</td><td>118.0</td><td><img src="images/severity_none.png" alt="images/severity_none.png" style="vertical-align: middle;"></td>
+</tr>
+<tr>
+<td nowrap class="field1">Total users launched</td><td>70&nbsp;</td><td><img src="images/severity_none.png" alt="images/severity_none.png" style="vertical-align: middle;"></td><td nowrap class="field1" scope="row">Average Request response time</td><td>0.258&nbsp;s</td><td><img src="images/severity_none.png" alt="images/severity_none.png" style="vertical-align: middle;"></td>
+</tr>
+<tr>
+<td nowrap class="field1">Total iterations completed</td><td>142&nbsp;</td><td><img src="images/severity_none.png" alt="images/severity_none.png" style="vertical-align: middle;"></td><td nowrap class="field1" scope="row">Average Page response time</td><td>0.961&nbsp;s</td><td><img src="images/severity_none.png" alt="images/severity_none.png" style="vertical-align: middle;"></td>
+</tr>
+<tr>
+<td nowrap class="field1">Total throughput</td><td>1,033&nbsp; MB</td><td><img src="images/severity_none.png" alt="images/severity_none.png" style="vertical-align: middle;"></td><td nowrap class="field1">Average throughput</td><td>30.06&nbsp; Mb/s</td><td><img src="images/severity_none.png" alt="images/severity_none.png" style="vertical-align: middle;"></td>
+</tr>
+<tr>
+<td nowrap class="field1">Total request errors</td><td>1</td><td><img src="images/severity_none.png" alt="images/severity_none.png" style="vertical-align: middle;"></td><td nowrap class="field1">Error rate</td><td>0&nbsp;%</td><td><img src="images/severity_none.png" alt="images/severity_none.png" style="vertical-align: middle;"></td>
+</tr>
+<tr>
+<td nowrap class="field1">Total action errors</td><td>0&nbsp;</td><td><img src="images/severity_none.png" alt="images/severity_none.png" style="vertical-align: middle;"></td><td width="220" nowrap class="field1" scope="row">Alerts total duration </td><td>0&nbsp;%</td><td><img src="images/severity_none.png" alt="images/severity_none.png" style="vertical-align: middle;"></td><td>&nbsp;</td>
+</tr>
+</table>
+</div>
+<br>
+<div>
+<table style="text-align: center; width: 400px; border: 0px;" class="severities_legend_template">
+<tr>
+<td><img src="images/severity_none.png" style="vertical-align: middle;">&nbsp;=&nbsp;No SLA</td><td><img src="images/severity_passed.png" style="vertical-align: middle;">&nbsp;=&nbsp;Passed</td><td><img src="images/severity_low.png" style="vertical-align: middle;">&nbsp;=&nbsp;Warning</td><td><img src="images/severity_high.png" style="vertical-align: middle;">&nbsp;=&nbsp;Failed</td>
+</tr>
+</table>
+</div>
+<br>
+<div align="center" class="graph_predefined" style="margin-top: 5px">
+<img src="images/summary.png" alt="images/summary.png ( images/summary.png)"></div>
+</div>
+<div style="width: 100%; height: 20px;" id="report.hotspots">
+<div style="float:left" class="h1" id="statistics_summary_title">Hot spots</div>
+</div>
+<div class="wrapper" align="center">
+<p class="smallTitle">Top 5 errors</p>
+<div align="center">
+<table class="top_five_errors_table">
+<tr>
+<th width="22%">User Path</th><th width="22%">Parent</th><th width="47%">Page</th><th width="9%">Count</th>
+</tr>
+<tr>
+<td class="line1">Sockshop_Buyer</td><td class="line1">Home PAge</td><td class="line1">/navbar.html</td><td class="line1">1</td>
+</tr>
+</table>
+</div>
+<p class="smallTitle">Top 5 alerts</p>
+<div align="center">
+<table class="top_five_alerts_table">
+<tr>
+<td>No alerts</td>
+</tr>
+</table>
+</div>
+<p class="smallTitle">First critical alerts</p>
+<div align="center">
+<table class="first_critical_alerts_table">
+<tr>
+<td>No alerts</td>
+</tr>
+</table>
+</div>
+<p align="center" class="smallTitle">Top 5 average response time (Pages)</p>
+<div align="center">
+<table class="top_average_response_times_summary_template">
+<tr>
+<th width="22%">User Path</th><th width="22%">Parent</th><th width="47%">Page</th><th width="9%">Duration</th>
+</tr>
+<tr>
+<td class="line1">Sockshop_Buyer</td><td class="line1">Home PAge</td><td class="line1">/</td><td class="line1">5.48</td>
+</tr>
+<tr>
+<td class="line2">Sockshop_Buyer</td><td class="line2">Home PAge</td><td class="line2">/footer.html</td><td class="line2">2.37</td>
+</tr>
+<tr>
+<td class="line1">Sockshop_Buyer</td><td class="line1">add to cart</td><td class="line1">/detail.html</td><td class="line1">1.77</td>
+</tr>
+<tr>
+<td class="line2">Hipstershop_Buyer</td><td class="line2">add to cart</td><td class="line2">/cart</td><td class="line2">1.57</td>
+</tr>
+<tr>
+<td class="line1">Sockshop_Buyer</td><td class="line1">top deals</td><td class="line1">/navbar.html_1</td><td class="line1">1.57</td>
+</tr>
+</table>
+</div>
+<p class="smallTitle">Top 5 maximum response time (Pages)</p>
+<div align="center">
+<table class="top_maximum_response_time_table">
+<tr>
+<th width="22%">User Path</th><th width="22%">Parent</th><th width="47%">Page</th><th width="9%">Duration</th>
+</tr>
+<tr>
+<td class="line1">Sockshop_Buyer</td><td class="line1">Home PAge</td><td class="line1">/</td><td class="line1">12.7</td>
+</tr>
+<tr>
+<td class="line2">Hipstershop_Buyer</td><td class="line2">add to cart</td><td class="line2">/cart</td><td class="line2">6.43</td>
+</tr>
+<tr>
+<td class="line1">Hipstershop_Buyer</td><td class="line1">select category</td><td class="line1">/product/LS4PSXUNUM</td><td class="line1">5.08</td>
+</tr>
+<tr>
+<td class="line2">Hipstershop_Buyer</td><td class="line2">Select product</td><td class="line2">/product/9SIQT8TOJO</td><td class="line2">4.83</td>
+</tr>
+<tr>
+<td class="line1">Hipstershop_Buyer</td><td class="line1">home Page</td><td class="line1">/</td><td class="line1">4.7</td>
+</tr>
+</table>
+</div>
+</div>
+<div style="width: 100%; height: 20px;" id="report.errors">
+<div style="float:left" class="h1" id="statistics_summary_title">Errors</div>
+</div>
+<div class="wrapper" align="center">
+<p class="smalltitle">Request errors</p>
+<div align="center">
+<table width="100%" border="0" align="center" class="errors_summary_impl_template">
+<tr>
+<th>Error Type</th><th>Count</th><th width="70%">Description</th>
+</tr>
+<tr>
+<td class="line1">500</td><td align="center" class="line1">1</td><td class="line1">Internal Server Error</td>
+</tr>
+<tr>
+<td class="line2">Total</td><td align="center" class="line2">1</td><td class="line2">Total error count.</td>
+</tr>
+</table>
+</div>
+<p class="smalltitle">Action errors</p>
+<div align="center">
+<table width="100%" border="0" align="center" class="errors_summary_impl_template">
+<tr>
+<td colspan="3">No errors</td>
+</tr>
+</table>
+</div>
+<p class="smalltitle">External Data Errors</p>
+<div align="center">
+<table width="100%" border="0" align="center" class="errors_summary_impl_template">
+<tr>
+<td colspan="3">No errors</td>
+</tr>
+</table>
+</div>
+</div>
+<div style="width: 100%; height: 20px;" id="report.alerts">
+<div style="float:left" class="h1" id="statistics_summary_title">Alerts</div>
+</div>
+<div class="wrapper" align="center">
+<div align="center">
+<table width="100%" border="0" align="center" class="alerts_summary_template">
+<tr>
+<td colspan="3">No alerts</td>
+</tr>
+</table>
+</div>
+</div>
+<div style="width: 100%; height: 20px;" id="report.summary.all">
+<div style="float:left" class="h1" id="statistics_summary_title">General statistics</div>
+</div>
+<div class="wrapper" align="center">
+<div align="center">
+<table class="all_statistics_content_template">
+<tr>
+<th width="10%">Min</th><th width="10%">Avg</th><th width="10%">Max</th><th width="10%">Count</th><th width="10%">Err</th><th width="10%">% of Err</th><th width="10%">SLA Profile</th>
+</tr>
+<tr>
+<td colspan="7" class="line2">
+<div class="tablelabel" style="margin-left: 00px">All User Paths</div>
+</td>
+</tr>
+<tr>
+<td class="line2right bordered">30.4</td><td class="line2right bordered">95.5</td><td class="line2right bordered">169.1</td><td class="line2right bordered">70</td><td class="line2right bordered">1</td><td class="line2right bordered">1.4</td><td class="line2right bordered">
+                                -
+                            </td>
+</tr>
+<tr>
+<td colspan="7" class="line1">
+<div class="tablelabel" style="margin-left: 00px">All pages</div>
+</td>
+</tr>
+<tr>
+<td class="line1right bordered">0.023</td><td class="line1right bordered">0.961</td><td class="line1right bordered">12.7</td><td class="line1right bordered">6,713</td><td class="line1right bordered">1</td><td class="line1right bordered">0</td><td class="line1right bordered">
+                                -
+                            </td>
+</tr>
+<tr>
+<td colspan="7" class="line2">
+<div class="tablelabel" style="margin-left: 00px">All requests</div>
+</td>
+</tr>
+<tr>
+<td class="line2right bordered">0.021</td><td class="line2right bordered">0.258</td><td class="line2right bordered">11.2</td><td class="line2right bordered">32,437</td><td class="line2right bordered">1</td><td class="line2right bordered">0</td><td class="line2right bordered">
+                                -
+                            </td>
+</tr>
+</table>
+</div>
+</div>
+<div style="width: 100%; height: 20px;" id="report.summary.transactions">
+<div style="float:left" class="h1" id="statistics_summary_title">Transaction statistics</div>
+</div>
+<div class="wrapper" align="center">
+<div align="center">
+<table class="all_statistics_content_template">
+<tr>
+<th width="10%">Min</th><th width="10%">Avg</th><th width="10%">Max</th><th width="10%">Count</th><th width="10%">Err</th><th width="10%">% of Err</th><th width="8%">Perc 50</th><th width="8%">Perc 95</th><th width="8%">Perc 99</th><th width="8%">Std Dev</th><th width="8%">Avg-90%</th><th width="10%">SLA Profile</th>
+</tr>
+<tr>
+<td colspan="12" class="line2">
+<div class="tablelabel" style="margin-left: 00px">All Transactions</div>
+</td>
+</tr>
+<tr>
+<td class="line2right bordered">0.123</td><td class="line2right bordered">1.66</td><td class="line2right bordered">15.8</td><td class="line2right bordered">4,585</td><td class="line2right bordered">1</td><td class="line2right bordered">0</td><td class="line2right bordered">1.14</td><td class="line2right bordered">4.59</td><td class="line2right bordered">5.8</td><td class="line2right bordered">1.51</td><td class="line2right bordered">1.5</td><td class="line2right bordered">
+                                -
+                            </td>
+</tr>
+</table>
+</div>
+</div>
+</div>
+</body>
+</html>

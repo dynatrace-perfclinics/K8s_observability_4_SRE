@@ -1,0 +1,16 @@
+POST http://34.89.214.38/cart/checkout HTTP/1.1
+Host: 34.89.214.38
+Proxy-Connection: keep-alive
+Content-Length: 256
+Cache-Control: max-age=0
+Upgrade-Insecure-Requests: 1
+Origin: http://34.89.214.38
+Content-Type: application/x-www-form-urlencoded
+User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/91.0.4472.114 Safari/537.36 Edg/91.0.864.59
+Accept: text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.9
+Referer: http://34.89.214.38/cart
+Accept-Encoding: gzip, deflate
+Accept-Language: en-US,en;q=0.9
+Cookie: shop_session-id=f0cd1187-fcd3-42cb-9ff4-527525a1984c
+
+email=someone%40example.com&street_address=1600+Amphitheatre+Parkway&zip_code=94043&city=Mountain+View&state=CA&country=United+States&credit_card_number=4432-8015-6152-0454&credit_card_expiration_month=1&credit_card_expiration_year=2022&credit_card_cvv=672

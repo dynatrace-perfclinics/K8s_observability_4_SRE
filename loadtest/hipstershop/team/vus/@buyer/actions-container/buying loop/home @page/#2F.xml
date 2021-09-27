@@ -1,0 +1,50 @@
+<http-page executeResourcesDynamically="false" name="/"
+    playRequestsSequentially="false"
+    recordedArtifactZipFileName="team/vus/@buyer/%resources%/recorded-artifacts/51810300-27b4-4885-9dec-b440fca34d3e.zip"
+    slaProfileEnabled="false" thinkTime="1765"
+    thinkTimeMode="MODE_SIMPLE_THINK_TIME" thinkTimeRangeEnd=""
+    thinkTimeRangeStart="" uid="51810300-27b4-4885-9dec-b440fca34d3e">
+    <embedded-action>21a74f63-7317-4ca8-9e4b-a6d77fca3690</embedded-action>
+    <screenshotFileDescription>recorded-screenshots/sc_974e96fe-09e7-4a41-9e32-6c50f5c94a69.jpg</screenshotFileDescription>
+</http-page>
+<http-action actionType="1" contentType="text/html; charset=utf-8"
+    extractorInjectPathPolicy="2" extractorPathPolicy="1"
+    followRedirects="false" generatedByClient="false"
+    linkExtractorSeveralMatchOccurrence="1"
+    linkExtractorSeveralMatchPolicy="1" linkExtractorType="6"
+    method="GET" name="/" path="/" postCharset="" postType="2"
+    recordedArtifactZipFileName="team/vus/@buyer/%resources%/recorded-artifacts/51810300-27b4-4885-9dec-b440fca34d3e.zip"
+    recordedResponseCode="200" responseSize="15681"
+    serverUid="34.89.214.38" slaProfileEnabled="false"
+    uid="21a74f63-7317-4ca8-9e4b-a6d77fca3690" useKeepAlive="false">
+    <responsePageFileDescription>recorded-responses/res_36c36840-9d97-47fb-8cc1-9e8a1d233640.0.0.html</responsePageFileDescription>
+    <requestContentFileDescription>recorded-requests/req_36c36840-9d97-47fb-8cc1-9e8a1d233640.txt</requestContentFileDescription>
+    <variable-extractor assertionOnNoMatch="false"
+        defaultValue="&lt;NOT FOUND>" displayMode="1"
+        endsWithSimple="&quot;>&#xa;                            &lt;img class=&quot;card-img-top&quot;"
+        extractFromVarNameAdv="" extractFromVarNameSimple=""
+        extractType="0" extractTypeAdv="0" extractTypeSimple="0"
+        matchNumber="0" matchNumberAdv="0" matchNumberSimple="1"
+        name="Products"
+        refererUid="21a74f63-7317-4ca8-9e4b-a6d77fca3690"
+        regExp=" &lt;a href=&quot;/product/(\w+)&quot;>\s+&lt;img class=&quot;card-img-top&quot;"
+        regExpAdv=" &lt;a href=&quot;/product/(\w+)&quot;>\s+&lt;img class=&quot;card-img-top&quot;"
+        setDefaultValue="true"
+        startsWithSimple=" &lt;a href=&quot;/product/" template="$1$"
+        templateAdv="$1$" uid="3f8415e2-10f4-4bc5-bf04-1d902300feaf" xpath="">
+        <variable-extractor-group extract="true" occurs="1" pattern="" type="4"/>
+    </variable-extractor>
+    <header name="Accept" value="text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.9"/>
+    <header name="Accept-Encoding" value="gzip, deflate"/>
+    <header name="Accept-Language" value="en-US,en;q=0.9"/>
+    <header name="Cookie" value="shop_session-id=f0cd1187-fcd3-42cb-9ff4-527525a1984c"/>
+    <header name="Host" value="34.89.214.38"/>
+    <header name="Proxy-Connection" value="keep-alive"/>
+    <header name="Upgrade-Insecure-Requests" value="1"/>
+    <header name="User-Agent" value="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/91.0.4472.114 Safari/537.36 Edg/91.0.864.59"/>
+    <responseHeaders>HTTP/1.1 200 OK&#xd;
+Date: Mon, 28 Jun 2021 07:20:07 GMT&#xd;
+Content-Type: text/html; charset=utf-8&#xd;
+Transfer-Encoding: chunked</responseHeaders>
+    <record-html-infos extractorRegExp="false" htmlType="0"/>
+</http-action>

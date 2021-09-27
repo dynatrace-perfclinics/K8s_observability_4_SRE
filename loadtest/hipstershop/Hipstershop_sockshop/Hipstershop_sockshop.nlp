@@ -1,0 +1,13 @@
+# Project description file
+
+project.name=Hipstershop_sockshop
+project.version=8.2
+project.original.version=8.2
+product.name=NeoLoad
+product.original.name=NeoLoad
+product.version=7.9.0
+product.original.version=7.9.0
+project.id=d147c487-2320-4d6d-9271-a140d95c4dc7
+project.config.path=config.zip
+project.config.storage=ZIP
+team.server.enabled=false

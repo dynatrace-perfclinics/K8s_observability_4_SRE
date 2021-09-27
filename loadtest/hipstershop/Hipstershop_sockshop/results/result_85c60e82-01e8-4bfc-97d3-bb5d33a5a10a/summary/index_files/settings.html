@@ -1,0 +1,268 @@
+<html xmlns:fo="http://www.w3.org/1999/XSL/Format">
+<head>
+<META http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<title>Performance Testing Report</title>
+<link href="style.css" rel="stylesheet" type="text/css">
+</head>
+<body class="match_report_template">
+<div id="leftnavigation">
+<div class="divHeader">NeoLoad Test Report</div>
+<div class="menu_wrapper">
+<div class="item">
+<a href="./summary.html">Summary</a>
+</div>
+<div class="subitem">
+<a href="./summary.html#report.resultssummary">Results summary</a>
+</div>
+<div class="subitem">
+<a href="./summary.html#report.statisticssummary">Statistics Summary</a>
+</div>
+<div class="subitem">
+<a href="./summary.html#report.hotspots">Hot spots</a>
+</div>
+<div class="subitem">
+<a href="./summary.html#report.errors">Errors</a>
+</div>
+<div class="subitem">
+<a href="./summary.html#report.alerts">Alerts</a>
+</div>
+<div class="subitem">
+<a href="./summary.html#report.summary.all">General statistics</a>
+</div>
+<div class="subitem">
+<a href="./summary.html#report.summary.transactions">Transaction statistics</a>
+</div>
+<div class="item">
+<a href="./settings.html">Execution context</a>
+</div>
+<div class="item">
+<a href="./servers.html">Servers</a>
+</div>
+<div class="item">
+<a href="./populations.html">Populations</a>
+</div>
+<div class="item">
+<a href="./virtual-users.html">User Paths</a>
+</div>
+<div class="item">
+<a href="./transactions.html">Transactions</a>
+</div>
+<div class="item">
+<a href="./pages.html">Pages</a>
+</div>
+<div class="item">
+<a href="./medias.html">Media Contents</a>
+</div>
+<div class="item">
+<a href="./pushmessages.html">Push messages</a>
+</div>
+<div class="item">
+<a href="./monitors.html">Monitors</a>
+</div>
+<div class="item">
+<a href="./scenario_scenario1.html">Scenario</a>
+</div>
+<div class="title">Main graphs</div>
+<div class="item">
+<a href="./Main graphs_pages.average.html">Average page response time</a>
+</div>
+<div class="item">
+<a href="./Main graphs_requests.average.html">Average request response time</a>
+</div>
+<div class="item">
+<a href="./Main graphs_transactions.average.html">Average response time (Transactions)</a>
+</div>
+<div class="item">
+<a href="./Main graphs_hits.html">Requests per second</a>
+</div>
+<div class="item">
+<a href="./Main graphs_errors.html">Errors</a>
+</div>
+<div class="item">
+<a href="./Main graphs_throughput.html">Throughput</a>
+</div>
+<div class="item">
+<a href="./Main graphs_pages.average.vu.html">Response time against load</a>
+</div>
+<div class="item">
+<a href="./Main graphs_percentile.html">Distribution of Transaction Durations</a>
+</div>
+</div>
+<div style="float: right;">
+<img style="margin-top: 10px; margin-bottom: 0px; margin-right: 4px" src="./images/logo_tricentis.png"></div>
+</div>
+<div id="content" class="match_report_settings_template">
+<div class="divHeader">Execution context</div>
+<div style="width: 100%; height: 20px;" id="report.settings.summary">
+<div style="float:left" class="h1" id="statistics_summary_title">Summary</div>
+</div>
+<div class="wrapper" align="center">
+<div align="center">
+<div align="center">
+<table class="simpleResultSummary_template">
+<tr>
+<td class="titleCell line2">Name</td><td class="line2">22:17 - 22 Sep 2021</td><td class="titleCell line2">Project</td><td class="line2" width="35%">Hipstershop_sockshop</td>
+</tr>
+<tr>
+<td class="titleCell line2" nowrap rowspan="2">Description</td><td class="line2" rowspan="2" valign="top"></td><td class="titleCell line2">Scenario</td><td class="line2">scenario1</td>
+</tr>
+<tr>
+<td class="titleCell line2" rowspan="3">Load Policy</td><td class="line2" rowspan="3" valign="top" width="55%">
+<ul class="valuesList" style="padding-left:0px">
+<li class="listItem">The population&nbsp;<strong>HipsterShop_buyer</strong>&nbsp;
+            is ramp up&nbsp;
+            from&nbsp;<strong>20</strong>&nbsp;users&nbsp;
+            adding&nbsp;<strong>30</strong>&nbsp;users&nbsp;
+            every&nbsp;<strong>3.0</strong>&nbsp;minutes,&nbsp;to a maximum of &nbsp;<strong>50</strong>&nbsp;users.
+        </li>
+<li class="listItem">The population&nbsp;<strong>Sockshop_Buyer</strong>&nbsp;
+            is ramp up&nbsp;
+            from&nbsp;<strong>20</strong>&nbsp;users&nbsp;
+            adding&nbsp;<strong>30</strong>&nbsp;users&nbsp;
+            every&nbsp;<strong>5.0</strong>&nbsp;minutes,&nbsp;to a maximum of &nbsp;<strong>50</strong>&nbsp;users.
+        </li>
+</ul>
+</td>
+</tr>
+<tr>
+<td class="titleCell line2">Status</td><td class="line2"><img src="images/status_PASS.png" alt="images/status_PASS.png" style="vertical-align: middle;">  Passed</td>
+</tr>
+<tr>
+<td class="titleCell line2">Start date</td><td class="line2">Sep 22, 2021 10:18:10 PM</td>
+</tr>
+<tr>
+<td class="titleCell line2">End date</td><td class="line2">Sep 22, 2021 10:40:19 PM</td><td class="titleCell line2" rowspan="2">Stop Policy</td><td class="line2" rowspan="2" valign="top" width="55%">
+<ul class="valuesList" style="padding-left:0px">
+<li class="listItem">Population&nbsp;<strong>HipsterShop_buyer</strong>: immediate.
+        </li>
+<li class="listItem">Population&nbsp;<strong>Sockshop_Buyer</strong>: immediate.
+        </li>
+</ul>
+</td>
+</tr>
+<tr>
+<td class="titleCell line2">Duration</td><td class="line2">00:22:09</td>
+</tr>
+<tr>
+<td class="titleCell line2">Termination reason</td><td class="line2">Manual action</td><td class="titleCell line2">Filters</td><td class="line2">
+<div>None</div>
+</td>
+</tr>
+<tr>
+<td class="titleCell line2">LG Hosts</td><td class="line2">localhost:7100</td><td class="titleCell line2" nowrap>Debug</td><td class="line2">Disabled</td>
+</tr>
+</table>
+</div>
+<br>
+<table style="border: 0" class="settings_global_template">
+<tr>
+<td nowrap class="field1 settings_global_template_first_td">NeoLoad version</td><td>7.9.0;build=20210408-64</td>
+</tr>
+<tr>
+<td nowrap class="field1 settings_global_template_first_td">Graphs granularity</td><td>10s. (Standard)</td>
+</tr>
+</table>
+</div>
+<br>
+</div>
+<div style="width: 100%; height: 20px;" id="report.settings.global.applicationproxy">
+<div style="float:left" class="h1" id="statistics_summary_title">Application proxy</div>
+</div>
+<div class="wrapper" align="center">
+<div align="center">
+<table class="settings_global_proxy_table">
+<tr>
+<td>No proxy</td>
+</tr>
+</table>
+</div>
+<br>
+</div>
+<div style="width: 100%; height: 20px;" id="report.settings.perzone.applicationproxies">
+<div style="float:left" class="h1" id="statistics_summary_title">Zone application proxies</div>
+</div>
+<div class="wrapper" align="center">
+<div align="center">
+<table class="settings_perzone_proxy_table">
+<tr>
+<td>No proxy</td>
+</tr>
+</table>
+</div>
+<br>
+</div>
+<div style="width: 100%; height: 20px;" id="report.settings.constantvariables">
+<div style="float:left" class="h1" id="statistics_summary_title">Constant variables</div>
+</div>
+<div class="wrapper" align="center">
+<div align="center">
+<table class="settings_constant_variables_table">
+<tr>
+<th width="25%">Name</th><th width="25%">Value</th><th>Description</th>
+</tr>
+<tr>
+<td class="line4">basicPath</td><td class="line4">/</td><td class="line4">basicPath</td>
+</tr>
+<tr>
+<td class="line3">carts_host</td><td class="line3">carts.jx-staging.35.233.18.9.nip.io</td><td class="line3">carts_host</td>
+</tr>
+<tr>
+<td class="line4">carts_port</td><td class="line4">80</td><td class="line4">carts_port</td>
+</tr>
+<tr>
+<td class="line3">host</td><td class="line3">35.234.127.4</td><td class="line3">host</td>
+</tr>
+<tr>
+<td class="line4">port</td><td class="line4">8080</td><td class="line4">port</td>
+</tr>
+</table>
+</div>
+<br>
+</div>
+<div style="width: 100%; height: 20px;" id="report.settings.userpaths">
+<div style="float:left" class="h1" id="statistics_summary_title">User Paths settings</div>
+</div>
+<div class="wrapper" align="center">
+<div align="center">
+<table class="settings_constant_variables_table"><tr><td>
+<p class="smallTitle">Hipstershop_Buyer</p>
+<p>
+<table style="border:none">
+<tr>
+<td style="width:30%">Error policy: </td><td>Do nothing</td>
+</tr>
+<tr>
+<td>Assertion policy: </td><td>Do nothing</td>
+</tr>
+<tr>
+<td>Thinktime policy: </td><td>defined in pages</td>
+</tr>
+<tr>
+<td>Pacing: </td><td>No pacing</td>
+</tr>
+</table>
+</p>
+</td><td>
+<p class="smallTitle">Sockshop_Buyer</p>
+<p>
+<table style="border:none">
+<tr>
+<td style="width:30%">Error policy: </td><td>Do nothing</td>
+</tr>
+<tr>
+<td>Assertion policy: </td><td>Do nothing</td>
+</tr>
+<tr>
+<td>Thinktime policy: </td><td>defined in pages</td>
+</tr>
+<tr>
+<td>Pacing: </td><td>No pacing</td>
+</tr>
+</table>
+</p>
+</td></tr></table>
+</div>
+</div>
+</div>
+</body>
+</html>

@@ -1,0 +1,291 @@
+
+    
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Hipster Shop</title>
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-WskhaSGFgHYWDcbwN70/dfYBj47jz9qbsMId/iRN3ewGhXQFZCSftd1LZCfmhktB" crossorigin="anonymous">
+</head>
+<body>
+
+    <header>
+        <div class="navbar navbar-dark bg-dark box-shadow">
+            <div class="container d-flex justify-content-between">
+                <a href="/" class="navbar-brand d-flex align-items-center">
+                    Hipster Shop
+                </a>
+                
+                <form class="form-inline ml-auto" method="POST" action="/setCurrency" id="currency_form">
+                    <select name="currency_code" class="form-control"
+                    onchange="document.getElementById('currency_form').submit();" style="width:auto;">
+                    
+                        <option value="EUR" >EUR</option>
+                    
+                        <option value="USD" selected="selected">USD</option>
+                    
+                        <option value="JPY" >JPY</option>
+                    
+                        <option value="GBP" >GBP</option>
+                    
+                        <option value="TRY" >TRY</option>
+                    
+                        <option value="CAD" >CAD</option>
+                    
+                    </select>
+                    <a class="btn btn-primary btn-light ml-2" href="/cart" role="button">View Cart (1)</a>
+                </form>
+                
+            </div>
+        </div>
+    </header>
+
+
+
+
+    <main role="main">
+        <div class="py-5">
+            <div class="container bg-light py-3 px-lg-5 py-lg-5">
+                
+
+                    <div class="row mb-3 py-2">
+                        <div class="col">
+                            <h3>1 item
+                                in your Shopping Cart</h3>
+                        </div>
+                        <div class="col text-right">
+                            <form method="POST" action="/cart/empty">
+                                <button class="btn btn-secondary" type="submit">Empty cart</button>
+                                <a class="btn btn-info" href="/" role="button">Browse more products &rarr; </a>
+                            </form>
+                    
+                        </div>
+                    </div>
+                    <hr>
+                    
+                    
+                    <div class="row pt-2 mb-2">
+                        <div class="col text-right">
+                                <a href="/product/9SIQT8TOJO"><img class="img-fluid" style="width: auto; max-height: 60px;"
+                                    src="/static/img/products/city-bike.jpg" /></a>
+                        </div>
+                        <div class="col align-middle">
+                            <strong>City Bike</strong><br/>
+                            <small class="text-muted">SKU: #9SIQT8TOJO</small>
+                        </div>
+                        <div class="col text-left">
+                            Qty: 1<br/>
+                            <strong>
+                                USD 789.50
+                            </strong>
+                        </div>
+                    </div>
+                     
+                    <div class="row pt-2 my-3">
+                        <div class="col text-center">
+                            <p class="text-muted my-0">Shipping Cost: <strong>USD 4.72</strong></p>
+                            Total Cost: <strong>USD 794.22</strong>
+                        </div>
+                    </div>
+
+                    <hr/>
+                    <div class="row py-3 my-2">
+                        <div class="col-12 col-lg-8 offset-lg-2">
+                            <h3>Checkout</h3>
+                            <form action="/cart/checkout" method="POST">
+                                <div class="form-row">
+                                    <div class="col-md-5 mb-3">
+                                            <label for="email">E-mail Address</label>
+                                            <input type="email" class="form-control" id="email"
+                                                name="email" value="someone@example.com" required>
+                                        </div>
+                                    <div class="col-md-5 mb-3">
+                                        <label for="street_address">Street Address</label>
+                                        <input type="text" class="form-control"  name="street_address"
+                                            id="street_address" value="1600 Amphitheatre Parkway" required>
+                                    </div>
+                                    <div class="col-md-2 mb-3">
+                                        <label for="zip_code">Zip Code</label>
+                                        <input type="text" class="form-control"
+                                            name="zip_code" id="zip_code" value="94043" required pattern="\d{4,5}">
+                                    </div>
+                                    
+                                </div>
+                                <div class="form-row">
+                                    <div class="col-md-5 mb-3">
+                                            <label for="city">City</label>
+                                            <input type="text" class="form-control" name="city" id="city"
+                                                value="Mountain View" required>
+                                        </div>
+                                    <div class="col-md-2 mb-3">
+                                        <label for="state">State</label>
+                                        <input type="text" class="form-control" name="state" id="state"
+                                            value="CA" required>
+                                    </div>
+                                    <div class="col-md-5 mb-3">
+                                        <label for="country">Country</label>
+                                        <input type="text" class="form-control" id="country"
+                                            placeholder="Country Name" 
+                                            name="country" value="United States" required>
+                                    </div>
+                                </div>
+                                <div class="form-row">
+                                    <div class="col-md-6 mb-3">
+                                        <label for="credit_card_number">Credit Card Number</label>
+                                        <input type="text" class="form-control" id="credit_card_number"
+                                            name="credit_card_number"
+                                            placeholder="0000-0000-0000-0000"
+                                            value="4432-8015-6152-0454"
+                                            required pattern="\d{4}-\d{4}-\d{4}-\d{4}">
+                                    </div>
+                                    <div class="col-md-2 mb-3">
+                                        <label for="credit_card_expiration_month">Month</label>
+                                        <select name="credit_card_expiration_month" id="credit_card_expiration_month"
+                                            class="form-control">
+                                            <option value="1">January</option>
+                                            <option value="2">February</option>
+                                            <option value="3">March</option>
+                                            <option value="4">April</option>
+                                            <option value="5">May</option>
+                                            <option value="6">June</option>
+                                            <option value="7">July</option>
+                                            <option value="8">August</option>
+                                            <option value="9">September</option>
+                                            <option value="10">October</option>
+                                            <option value="11">November</option>
+                                            <option value="12">December</option>
+                                        </select>
+                                    </div>
+                                    <div class="col-md-2 mb-3">
+                                            <label for="credit_card_expiration_year">Year</label>
+                                            <select name="credit_card_expiration_year" id="credit_card_expiration_year"
+                                                class="form-control">
+                                            <option value="2021"
+                                                
+                                            >2021</option><option value="2022"
+                                                selected="selected"
+                                            >2022</option><option value="2023"
+                                                
+                                            >2023</option><option value="2024"
+                                                
+                                            >2024</option><option value="2025"
+                                                
+                                            >2025</option>
+                                            </select>
+                                        </div>
+                                    <div class="col-md-2 mb-3">
+                                        <label for="credit_card_cvv">CVV</label>
+                                        <input type="password" class="form-control" id="credit_card_cvv"
+                                            autocomplete="off"
+                                            name="credit_card_cvv" value="672" required pattern="\d{3}">
+                                    </div>
+                                </div>
+                                <div class="form-row">
+                                    <button class="btn btn-primary" type="submit">Place your order &rarr;</button>
+                                </div>
+                            </form>
+                        </div>
+                    </div>
+                 
+
+                
+                    <hr/>
+                    
+<h5 class="text-muted">Products you might like</h5>
+<div class="row my-2 py-3">
+    
+        <div class="col-sm-6 col-md-4 col-lg-3">
+            <div class="card mb-3 box-shadow">
+                <a href="/product/L9ECAV7KIM">
+                    <img class="card-img-top border-bottom" alt =""
+                        style="width: 100%; height: auto;"
+                        src="/static/img/products/terrarium.jpg">
+                </a>
+                <div class="card-body text-center py-2">
+                    <small class="card-title text-muted">
+                        Terrarium
+                    </small>
+                </div>
+            </div>
+        </div>
+    
+        <div class="col-sm-6 col-md-4 col-lg-3">
+            <div class="card mb-3 box-shadow">
+                <a href="/product/LS4PSXUNUM">
+                    <img class="card-img-top border-bottom" alt =""
+                        style="width: 100%; height: auto;"
+                        src="/static/img/products/camp-mug.jpg">
+                </a>
+                <div class="card-body text-center py-2">
+                    <small class="card-title text-muted">
+                        Metal Camping Mug
+                    </small>
+                </div>
+            </div>
+        </div>
+    
+        <div class="col-sm-6 col-md-4 col-lg-3">
+            <div class="card mb-3 box-shadow">
+                <a href="/product/1YMWWN1N4O">
+                    <img class="card-img-top border-bottom" alt =""
+                        style="width: 100%; height: auto;"
+                        src="/static/img/products/barista-kit.jpg">
+                </a>
+                <div class="card-body text-center py-2">
+                    <small class="card-title text-muted">
+                        Home Barista Kit
+                    </small>
+                </div>
+            </div>
+        </div>
+    
+        <div class="col-sm-6 col-md-4 col-lg-3">
+            <div class="card mb-3 box-shadow">
+                <a href="/product/OLJCESPC7Z">
+                    <img class="card-img-top border-bottom" alt =""
+                        style="width: 100%; height: auto;"
+                        src="/static/img/products/typewriter.jpg">
+                </a>
+                <div class="card-body text-center py-2">
+                    <small class="card-title text-muted">
+                        Vintage Typewriter
+                    </small>
+                </div>
+            </div>
+        </div>
+    
+</div>
+
+                
+
+            </div>
+        </div>
+    </main>
+
+    
+    <footer class="py-5 px-5">
+        <div class="container">
+            <p>
+                &copy; 2018 Google Inc
+                <span class="text-muted">
+                    <a href="https://github.com/GoogleCloudPlatform/microservices-demo/">(Source Code)</a>
+                </span>
+            </p>
+            <p>
+                <small class="text-muted">
+                    This website is hosted for demo purposes only. It is not an
+                    actual shop. This is not an official Google project.
+                </small>
+            </p>
+            <small class="text-muted">
+                session-id: f0cd1187-fcd3-42cb-9ff4-527525a1984c</br>
+                request-id: 626339fc-45ab-41b6-bdf7-cc32f61f78cc</br>
+            </small>
+        </div>
+    </footer>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js" integrity="sha384-smHYKdLADwkXOn1EmN1qk/HfnUcbVRZyYmZ4qpPea6sjB/pTJ0euyQp0Mk8ck+5T" crossorigin="anonymous"></script>
+</body>
+</html>
+

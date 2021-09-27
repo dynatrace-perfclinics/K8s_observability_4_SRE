@@ -1,0 +1,1 @@
+<variable-random-number max-value="9999" min-value="1" name="streetnumber" order="1" policy="5" random-seed="false" range="2" uid="cd4a0968-9e78-40b9-9676-15db59ed9665" whenOutOfValues="CYCLE_VALUES"/>
