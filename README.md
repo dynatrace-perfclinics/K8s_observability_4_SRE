@@ -39,7 +39,7 @@ gcloud container clusters create onlineboutique \
 git clone https://github.com/dynatrace-perfclinics/K8s_observability_4_SRE
 cd K8s_observability_4_SRE
 ```
-### Deploy the sample Application
+### 4. Deploy the sample Application
 
 #### 0. Istio
 0. Create the various namespaces
@@ -109,8 +109,8 @@ so we will label the namesapce : hipster-shoo
 ```
 kubectl label namespace hipster-shop istio-injection=enabled
 ```
-### 2. Kubernetes events : Deploy Kspan and Event exporter
-#### Kspan
+#### 2. Kubernetes events : Deploy Kspan and Event exporter
+##### Kspan
 Kspan is a solution build by weaveworks generating OpenTelementry traces based on K8s event.
 To deploy kspan , we need to create a serice account having a clusterRole to be able to get, list, watch events from the cluster.
 Therefore we need to deploy kspan in the following order:
@@ -118,7 +118,7 @@ Therefore we need to deploy kspan in the following order:
 kubectl apply -f kspan/rbac.yaml
 kubectl apply -f kspan/kspan_deployment.yaml
 ```
-#### Event exporter
+##### Event exporter
 ```
 kubectl apply -f Event-exporter/deploy.yaml
 ```
@@ -126,7 +126,7 @@ The event exporter will expose 2 Prometheus Counter:
 * kube_event_count
 * kube_event_unique_events_total
 
-### 3.HipsterShop
+#### 3.HipsterShop
 ```
 cd hipstershop
 ./setup.sh
@@ -149,7 +149,7 @@ Add the following ports :
 ```
 kubectl apply -f istio/hipstershop_gateway.yaml
 ```
-### 5. Deploy Sockshop Production
+#### 4. Deploy Sockshop Production
 ```
 cd ../sockshop
 kubectl create -f ./manifests/k8s-namespaces.yml
@@ -174,7 +174,7 @@ kubectl apply -f ./manifests/sockshop-app/sockshop-production/
 cd ..
 kubectl apply -f istio/sockshop_gateway.yaml
 ```
-### 8. Install Litmus Chaoas
+### 5. Install Litmus Chaoas
 ```
 helm repo add litmuschaos https://litmuschaos.github.io/litmus-helm/
 kubectl create ns litmus
@@ -193,7 +193,7 @@ Deploy the scheduled experiments :
 ```
 kubectl apply -k /litmus_choas/schedule/ -n hipster-shop
 ```
-### 5. Run a neoload test
+### 6. Run a neoload test
 
 #### uppdate the definition of your hipstershop url
 TO get the ip adress of the istio gateway run the following command :
