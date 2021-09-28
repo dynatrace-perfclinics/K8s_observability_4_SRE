@@ -98,7 +98,7 @@ once you have the decimal value you can run the following command :
 EXPORT DT_CLUSTER_ID=<YOUR DT CLUSTER ID>
 sed -i "s,DYNATRACE_CLUSTER_ID,$DT_CLUSTER_ID," istio/otel-collector-deployment.yaml
 ```
-
+###### c. Deploy the OpenTelemetry Collector
 We can now deploy the openTelemetry collector :
 ```
 kubectl apply -f istio/otel-collector-deployment.yaml
@@ -145,7 +145,7 @@ Add the following ports :
   targetPort: 8182
 ```
 
-### 4. Expose the HipsterShop out of the cluster
+#####  Expose the HipsterShop out of the cluster
 ```
 kubectl apply -f istio/hipstershop_gateway.yaml
 ```
@@ -169,18 +169,11 @@ kubectl apply -f ./manifests/backend-services/orders-db/
 
 kubectl apply -f ./manifests/sockshop-app/sockshop-production/
 ```
-### 6. Expose the HipsterShop out of the cluster
+#####  Expose the Sockshop out of the cluster
 ```
 cd ..
 kubectl apply -f istio/sockshop_gateway.yaml
 ```
-### 7. Deploy the OpenTelemetry Collector
-```
-cd ..
-kubectl apply -f istio/sockshop_gateway.yaml
-```
-
-
 ### 8. Install Litmus Chaoas
 ```
 helm repo add litmuschaos https://litmuschaos.github.io/litmus-helm/
