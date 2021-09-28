@@ -87,6 +87,18 @@ EXPORT DT_API_URL="https://{your-environment-id}.live.dynatrace.com"
 sed -i "s,TENANTURL_TOREPLACE,$DT_API_URL," istio/otel-collector-deployment.yaml
 sed -i "s,DT_API_TOKEN_TO_REPLACE,$DT_API_TOKEN," istio/otel-collector-deployment.yaml
 ```
+Before deploying the OpenTelemetry Collector , you need to get the dynatrace cluster id registered in Dynatrace.
+To extact , you will need to go to Infrastructure/Kubernetes, select the cluster you want to monitor.
+select the Hexadecimal value of the cluster id in the URL :
+<p align="center"><img src="/image/cluster_config_id.PNG" width="60%" alt="dt api scope" /></p>
+The hexadecimal value needs to be converted in to decimal.
+once you have the decimal value you can run the following command :
+
+```
+EXPORT DT_CLUSTER_ID=<YOUR DT CLUSTER ID>
+sed -i "s,DYNATRACE_CLUSTER_ID,$DT_CLUSTER_ID," istio/otel-collector-deployment.yaml
+```
+
 We can now deploy the openTelemetry collector :
 ```
 kubectl apply -f istio/otel-collector-deployment.yaml

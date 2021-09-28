@@ -38,7 +38,7 @@ data:
               new_label: k8s.namespace.name
             - action: add_label
               new_label: dt.kubernetes.config.id
-              new_value: <DYNATRACE CLUSTER ID>
+              new_value: DYNATRACE_CLUSTER_ID
             - action: update_label
               label: uid
               new_label: k8s.pod.uid
