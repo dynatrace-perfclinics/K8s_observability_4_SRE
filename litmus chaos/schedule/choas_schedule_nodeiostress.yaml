@@ -7,7 +7,7 @@ spec:
     repeat:
       properties:
         #format should be like "10m" or "2h" accordingly for minutes or hours
-        minChaosInterval: "10m"
+        minChaosInterval: "15m"
   engineTemplateSpec:
     engineState: 'active'
     appinfo:
@@ -30,7 +30,7 @@ spec:
             env:
               # set chaos duration (in sec) as desired
               - name: TOTAL_CHAOS_DURATION
-                value: '120'
+                value: '700'
 
               ## specify the size as percentage of free space on the file system
               - name: FILESYSTEM_UTILIZATION_PERCENTAGE
@@ -50,4 +50,4 @@ spec:
 
               # provide the comma separated target node names
               - name: TARGET_NODES
-                value: 'gke-onlineboutique-default-pool-112e98a2-dnv3,gke-onlineboutique-default-pool-112e98a2-w0ux'
+                value: 'gke-onlineboutique-default-pool-112e98a2-foka, gke-onlineboutique-default-pool-112e98a2-osgl'

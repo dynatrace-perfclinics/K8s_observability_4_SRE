@@ -29,7 +29,7 @@ spec:
               sidecar.istio.io/inject: "false"
             env:
               - name: TOTAL_CHAOS_DURATION
-                value: '500' # in seconds
+                value: '700' # in seconds
 
               - name: CPU_CORES
                 value: '2'

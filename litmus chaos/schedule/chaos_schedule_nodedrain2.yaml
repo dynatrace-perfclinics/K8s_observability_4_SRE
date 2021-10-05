@@ -7,7 +7,7 @@ spec:
     repeat:
       properties:
         #format should be like "10m" or "2h" accordingly for minutes or hours
-        minChaosInterval: "10m"
+        minChaosInterval: "20m"
   engineTemplateSpec:
     engineState: 'active'
     appinfo:
@@ -36,4 +36,4 @@ spec:
 
               # enter the target node name
               - name: TARGET_NODE
-                value: 'gke-onlineboutique-default-pool-112e98a2-5dq8'
+                value: 'gke-onlineboutique-default-pool-112e98a2-ghbb'
